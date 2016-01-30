@@ -1,0 +1,44 @@
+.sapMCrslItemTableCell {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.sapSuiteGT {
+	text-align: left;
+}
+
+#htmViewDiv span {
+	color: black !important;
+}
+
+#htmViewDiv strong {
+	color: white !important;
+}
+
+#htmViewDiv em {
+	color: black !important;
+}
+
+.customIconGrey .sapUiIcon {
+	color: #666666;
+}
+
+.customIconRed .sapUiIcon {
+	color: #CC0000;
+}
+
+.customPageWithFooter>section {
+bottom: 2em !important;
+}
+
+.customGenericTile {
+	margin : 0.5em;
+}
+
+.customImgScrollContainer .sapMScrollContScroll {
+	width : 100%;
+}
+
+/* .sapMPageWithFooter>section {
+bottom: 2em;
+} */

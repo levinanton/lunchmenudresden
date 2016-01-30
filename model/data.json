@@ -1,0 +1,302 @@
+{
+	"poi":[
+		{
+			"enabled" : true,
+			"id" : "mpipks",
+	   		"title" : "Max-Planck-Institut-PkS",
+	    	"location" : {
+	    		"latitude" : 51.026795,
+	    	   	"longitude" : 13.716771
+	    	},
+	    	"menu" : "/mpipks/pages/institut/menu_cur_de.pdf",
+	    	"type" : "pdf",
+	    	"period" : "week",
+	    	"address" : "N\u00F6thnitzer Stra\u00DFe 38, 01187 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "mpicpfs",
+	    	"title" : "Max-Planck-Institut-CPfS",
+	    	"location" : {
+	    		"latitude" : 51.026465,
+	    	   	"longitude" : 13.718801
+	    	},
+	    	"menu" : "/mpicpfs/web/Aktuelles/Menu/default_data/menu.pdf",
+	    	"type" : "pdf",
+	    	"period" : "week",
+	    	"address" : "N\u00F6thnitzer Stra\u00DFe 48, 01187 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "altemensa",
+	    	"title" : "Alte Mensa",
+	    	"location" : {
+	    		"latitude" : 51.026954,
+	    	   	"longitude" : 13.726538
+	    	},
+	    	"menu" : "/studentenwerk/feeds/speiseplan.rss?mid=18",
+	    	"type" : "rss",
+	    	"period" : "day",
+	    	"address" : "Mommsenstr. 13, 01069 Dresden"
+		},{
+			"enabled" : false,
+			"id" : "neuemensa",
+	    	"title" : "Neue Mensa",
+	    	"location" : {
+	    		"latitude" : 51.0287041,
+	    	   	"longitude" : 13.7314979
+	    	},
+	    	"menu" : "/studentenwerk/feeds/speiseplan.rss?mid=8",
+	    	"type" : "rss",
+	    	"period" : "day",
+	    	"address" : "Bergstra\u00DFe 51, 01069 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "suppenladen",
+	    	"title" : "Suppen Laden",
+	    	"location" : {
+	    		"latitude" : 51.029074,
+	    	   	"longitude" : 13.708142
+	    	},
+	    	"menu" : "/suppenladen/pdf.php?week=0",
+	    	"type" : "pdf",
+	    	"period" : "week",
+	    	"address" : "N\u00F6thnitzer Str. 3, 01187 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "manufaktur",
+	    	"title" : "Genuss-Manu-Faktur",
+	    	"location" : {
+	    		"latitude" : 51.030592,
+	    	   	"longitude" : 13.708422
+	    	},
+	    	"menu" : "/manufaktur/?Speisen_%2F_Getr%C3%A4nke:Wochenkarte #menutable",
+	    	"type" : "htm",
+	    	"period" : "week",
+	    	"address" : "Chemnitzer Str. 84, 01187 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "flora27",
+	    	"title" : "Flora 27 - Der Kaffeeladen",
+	    	"location" : {
+	    		"latitude" : 51.031215,
+	    	   	"longitude" : 13.708536
+	    	},
+	    	"menu" : "/flora27/download/flora27-speisekarte.pdf",
+	    	"type" : "pdf",
+	    	"period" : "day",
+	    	"address" : "Chemnitzer Str. 78a, 01187 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "pastamania",
+	    	"title" : "Pastamania",
+	    	"location" : {
+	    		"latitude" : 51.029910,
+	    	   	"longitude" : 13.708097
+	    	},
+	    	"menu" : "/ecm/cmisproxy/cmis/json/2ca5ea2e2e6c2fc0936ea045/root?objectId=JKhRLfjv8tObl6FSjiXcDYNMEGyNQ3bqJpEugw-z5Ak&cmisselector=content",
+	    	"type" : "img",
+	    	"period" : "day",
+	    	"address" : "Chemnitzer Str. 115, 01187 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "kardo",
+	    	"title" : "Kardo Pizzeria",
+	    	"location" : {
+	    		"latitude" : 51.028438,
+	    	   	"longitude" : 13.706706
+	    	},
+	    	"menu" : [
+	    		"/kardo/Pizza #content_main", 
+	    		"/kardo/Pizza1/ #content_main", 
+	    		"/kardo/Salate,-Pasta-Gratins #content_main"
+	    	],
+	    	"type" : "htm",
+	    	"period" : "day",
+	    	"address" : "Plauenscher Ring 2, 01187 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "meliz",
+	    	"title" : "Meliz D\u00F6ner",
+	    	"location" : {
+	    		"latitude" : 51.029760,
+	    	   	"longitude" : 13.707035
+	    	},
+	    	"menu" : [
+	    		"/meliz/index.php?kategorie=Vorspeisen #content", 
+	    		"/meliz/index.php?kategorie=D%FCr%FCm #content", 
+	    		"/meliz/index.php?kategorie=D%F6ner #content",
+	    		"/meliz/index.php?kategorie=D%F6nerteller #content",
+	    		"/meliz/index.php?kategorie=Salate #content",
+	    		"/meliz/index.php?kategorie=%DCberbackenes #content",
+	    		"/meliz/index.php?kategorie=Vegetarisches #content",
+	    		"/meliz/index.php?kategorie=Pizza #content",
+	    		"/meliz/index.php?kategorie=Grillh%E4hnchen #content",
+	    		"/meliz/index.php?kategorie=Teigspezialit%E4ten #content",
+	    		"/meliz/index.php?kategorie=Nudelgerichte #content",
+	    		"/meliz/index.php?kategorie=Diverses #content",
+	    		"/meliz/index.php?kategorie=Pommes #content",
+	    		"/meliz/index.php?kategorie=Schnitzel #content"
+	    	],
+	    	"type" : "htm",
+	    	"period" : "day",
+	    	"address" : "Chemnitzer Str. 96, 01187 Dresden"
+		},{
+			"enabled" : false,
+			"id" : "hoangdo",
+	    	"title" : "Hoang Do Asia Euro Restaurant",
+	    	"location" : {
+	    		"latitude" : 51.029901,
+	    	   	"longitude" : 13.706165
+	    	},
+	    	"menu" : [
+	    		"/hoangdo/menu #yd-category-156941"
+	    	],
+	    	"type" : "htm",
+	    	"period" : "day",
+	    	"address" : "F.-C.-Weiskopf-Platz 9, 01187 Dresden"
+		},{
+			"enabled" : false,
+			"id" : "budapest",
+	    	"title" : "Restaurant Budapest",
+	    	"location" : {
+	    		"latitude" : 51.035073,
+	    	   	"longitude" : 13.705738
+	    	},
+	    	"menu" : "/budapest/wp-content/uploads/2015/09/mittagsmenü_dresden1.jpg",
+	    	"type" : "img",
+	    	"period" : "day",
+	    	"address" : "Hofm\u00FChlenstra\u00DFe 14, 01187 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "holzstuebchen",
+	    	"title" : "Gastst\u00E4tte Holzst\u00FCbchen",
+	    	"location" : {
+	    		"latitude" : 51.033023,
+	    	   	"longitude" : 13.707514
+	    	},
+	    	"menu" : "/holzstuebchen/aktuelles #imageSubtitle-5784903101",
+	    	"type" : "htm",
+	    	"period" : "week",
+	    	"address" : "Zwickauer Str. 112, 01187 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "holidayinn",
+	    	"title" : "Holiday Inn",
+	    	"location" : {
+	    		"latitude" : 51.0337139,
+	    	   	"longitude" : 13.713004
+	    	},
+	    	"menu" : "/ecm/cmisproxy/cmis/json/2ca5ea2e2e6c2fc0936ea045/root?objectId=fWXZtaMnK_38xUf0zrDE28TioBtOFV1HaOcsbMmzmSg&cmisselector=content",
+	    	"type" : "img",
+	    	"period" : "week",
+	    	"address" : "Bamberger Str. 14, 01187 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "maxaltstadt",
+	    	"title" : "Max Restaurant Altstadt",
+	    	"location" : {
+	    		"latitude" : 51.051065,
+	    	   	"longitude" : 13.7347009
+	    	},
+	    	"menu" : "/dropbox/u/3428116/max.pdf",
+	    	"type" : "pdf",
+	    	"period" : "week",
+	    	"address" : "Wilsdruffer Stra\u00DFe 24, 01067 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "elrodizio",
+	    	"title" : "El Rodizio",
+	    	"location" : {
+	    		"latitude" : 51.0510159,
+	    	   	"longitude" : 13.7355495
+	    	},
+	    	"menu" : "/elrodizio/speisen/mittagskarte.html #menu",
+	    	"type" : "htm",
+	    	"period" : "week",
+	    	"address" : "Wilsdruffer Stra\u00DFe 22, 01067 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "tapasbarcelona",
+	    	"title" : "Tapas Barcelona",
+	    	"location" : {
+	    		"latitude" : 51.0494864,
+	    	   	"longitude" : 13.7385721
+	    	},
+	    	"menu" : "/widmann/files/mittagskarte_tapasbarcelona.pdf",
+	    	"type" : "pdf",
+	    	"period" : "week",
+	    	"address" : "Weisse Gasse 6, 01067 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "salumeria",
+	    	"title" : "Salumeria",
+	    	"location" : {
+	    		"latitude" : 51.0501938,
+	    	   	"longitude" : 13.7345191
+	    	},
+	    	"menu" : "/ecm/cmisproxy/cmis/json/2ca5ea2e2e6c2fc0936ea045/root?objectId=o0p-2fWflkN0JovYKFHlL1Fkqtf61re-jnCKdVCqow8&cmisselector=content",
+	    	"type" : "img",
+	    	"period" : "week",
+	    	"address" : "Webergasse 1, 01067 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "dubliner",
+	    	"title" : "The Dubliner",
+	    	"location" : {
+	    		"latitude" : 51.0490998,
+	    	   	"longitude" : 13.7410062
+	    	},
+	    	"menu" : "/dropbox/u/3428116/dubliner.pdf",
+	    	"type" : "pdf",
+	    	"period" : "week",
+	    	"address" : "Gewandhausstr. 7, 01067 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "shamrock",
+	    	"title" : "Shamrock",
+	    	"location" : {
+	    		"latitude" : 51.0506995,
+	    	   	"longitude" : 13.7336744
+	    	},
+	    	"menu" : "/dropbox/u/3428116/shamrock.pdf",
+	    	"type" : "pdf",
+	    	"period" : "week",
+	    	"address" : "Wilsdruffer Str. 20, 01067 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "augustobar",
+	    	"title" : "Augusto Bar",
+	    	"location" : {
+	    		"latitude" : 51.0573742,
+	    	   	"longitude" : 13.7289201
+	    	},
+	    	"menu" : "/augustobar/ #recent-posts",
+	    	"type" : "htm",
+	    	"period" : "week",
+	    	"address" : "Ostra-Allee 20, 01067 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "souperb",
+	    	"title" : "SOUPerb",
+	    	"location" : {
+	    		"latitude" : 51.0513905,
+	    	   	"longitude" : 13.7439969
+	    	},
+	    	"menu" : "/ecm/cmisproxy/cmis/json/2ca5ea2e2e6c2fc0936ea045/root?objectId=uffxmwgIO6MmRpjXr_7HNCLiVv69KpDB51-zjXou1uI&cmisselector=content",
+	    	"type" : "img",
+	    	"period" : "week",
+	    	"address" : "Rampische Stra\u00DFe 27, 01067 Dresden"
+		},{
+			"enabled" : true,
+			"id" : "kuppel",
+	    	"title" : "Kuppel Restaurant",
+	    	"location" : {
+	    		"latitude" : 51.058795,
+	    	   	"longitude" : 13.7266269
+	    	},
+	    	"menu" : "/dropbox/u/3428116/kuppel.pdf",
+	    	"type" : "pdf",
+	    	"period" : "week",
+	    	"address" : "Wei\u00DFeritzstr. 3, 01067 Dresden"
+		}
+	]	
+}

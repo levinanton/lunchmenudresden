@@ -1,0 +1,10 @@
+{
+	"WELCOME" : "assets/bon_appetit-wallpaper-480x272.jpg",
+	"FEEDBACK" : "assets/i_will_find_the_droids_im_looking_for-wallpaper-480x272.jpg",
+	"PDF" : "assets/pdficon_large.png",
+	"RSS" : "assets/feed-icon-28x28.png",
+	"HTM" : "assets/266px-HTML.svg.png",
+	"IMG" : "assets/jpeg-logo.png",
+	"SETTINGS" : "sap-icon://action-settings",
+	"MAP": "sap-icon://map"
+}

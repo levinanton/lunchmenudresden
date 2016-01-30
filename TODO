@@ -1,0 +1,45 @@
+new
+- bug report as feedback
+- ui5 log
+- show on map
+- views busy indication
+
+bugs
+- [views] re-set bookmark bug
+- [pdf] extra space bottom / pdf auto bookmark show
+- [mobile] select a previously selected list item doesn't show content
+- [htm] meliz vertical scroll
+- [htm] meliz encoding
+- [htm] hoelzstubchen full size
+- [htm] add Budapest as htm (img now)
+
+core
+- localization
+- localization with parameters
+- ui5 icons @ icon model
+
+htm
+- 
+
+img
+- multiple img option
+
+rss
+- 
+
+pdf
+-
+
+poi
+- add Wok Welt https://www.google.de/maps/place/Wok-Welt/@51.0301504,13.7088789,18z/data=!4m6!1m3!3m2!1s0x0000000000000000:0x26dacc1309982a67!2sWok-Welt!3m1!1s0x0000000000000000:0x26dacc1309982a67
+- add hoangdo http://www.hoangdo.de/menu
+- add anjali/baris bistro https://www.facebook.com/Anjali.Bistro
+- add keller cafe http://www.kellerscafe.de/
+- add IL Grottino da Salvatore http://www.ilgrottino.de/
+- add pegasus ? 
+- add Ristorante Piazza da Vinci ? 
+- add FFF Cityhotel Leonardo Dresden ?
+- add Asia Imbiss http://asia-imbiss-dresden.npage.de/
+- add hong ha dresden plauen Zwickauer Str. 136 ?
+- add ? http://www.brasserie-ehrlich.de/ 
+- add plauen fisch restaurnat
