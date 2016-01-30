@@ -29,7 +29,7 @@ sap.ui.jsview('js.ui.rss', {
 		var oPage = new sap.m.Page({
 			customHeader : oController.createBar(),
 			content : this.createList(),
-			footer : oController.createFooter()
+			footer : sap.ui.jsfragment( 'js.ui.fragment.footer', oController )
 		});
 		oPage.addStyleClass('customPageWithFooter');
 		return oPage;

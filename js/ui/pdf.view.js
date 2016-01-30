@@ -37,7 +37,7 @@ sap.ui.jsview('js.ui.pdf', {
 			enableScrolling : false,
 			customHeader : oController.createBar(),
 			content : this.createHTML(),
-			footer : oController.createFooter()
+			footer : sap.ui.jsfragment( 'js.ui.fragment.footer', oController )
 		});
 		oPage.addStyleClass('customPageWithFooter');
 		return oPage;

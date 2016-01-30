@@ -10,10 +10,10 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 		return sap.ui.core.UIComponent.getRouterFor(this);
 	},
 
-	getText : function(sKey) {
+	getText : function(sKey, oValues) {
 		var oModel = this.getOwnerComponent().getModel('i18n');
 		var oResourceBundle = oModel.getResourceBundle();
-		return oResourceBundle.getText(sKey);
+		return oResourceBundle.getText(sKey, oValues);
 	},
 
 	getSettings : function() {
@@ -112,15 +112,6 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 				text : '{title}'
 			}),
 			contentRight : oBookmarkButton
-		});
-	},
-	
-	createFooter : function() {
-		return new sap.m.Toolbar({
-			design : sap.m.ToolbarDesign.Info,
-			content : [ new sap.m.ToolbarSpacer(), new sap.m.Label({
-				text : '{address}'
-			}) ]
 		});
 	},
 

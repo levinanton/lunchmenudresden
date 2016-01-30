@@ -21,7 +21,7 @@ sap.ui.jsview('js.ui.htm', {
 		var oPage =  new sap.m.Page({
 			customHeader : oController.createBar(),
 			content : this.createHTML(),
-			footer : oController.createFooter()
+			footer : sap.ui.jsfragment( 'js.ui.fragment.footer', oController )
 		});
 		oPage.addStyleClass('customPageWithFooter');
 		return oPage;

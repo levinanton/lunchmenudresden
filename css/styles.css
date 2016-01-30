@@ -1,44 +1,39 @@
 .sapMCrslItemTableCell {
-	text-align: center;
-	vertical-align: middle;
+    text-align: center;
+    vertical-align: middle;
 }
-
 .sapSuiteGT {
-	text-align: left;
+    text-align: left;
 }
-
 #htmViewDiv span {
-	color: black !important;
+    color: black !important;
 }
-
 #htmViewDiv strong {
-	color: white !important;
+    color: white !important;
 }
-
 #htmViewDiv em {
-	color: black !important;
+    color: black !important;
 }
-
 .customIconGrey .sapUiIcon {
-	color: #666666;
+    color: #666666;
 }
-
 .customIconRed .sapUiIcon {
-	color: #CC0000;
+    color: #CC0000;
 }
-
 .customPageWithFooter>section {
-bottom: 2em !important;
+    bottom: 2em !important;
 }
-
 .customGenericTile {
-	margin : 0.5em;
+    margin: 0.5em;
 }
-
 .customImgScrollContainer .sapMScrollContScroll {
-	width : 100%;
+    width: 100%;
 }
-
 /* .sapMPageWithFooter>section {
 bottom: 2em;
 } */
+
+.customLink {
+    color: #ffffff !important;
+    margin-left: 0 !important;
+}

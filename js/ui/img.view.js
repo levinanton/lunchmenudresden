@@ -35,7 +35,7 @@ sap.ui.jsview('js.ui.img', {
 		var oPage = new sap.m.Page({
 			customHeader : oController.createBar(),
 			content : this.createScrollContainer(),
-			footer : oController.createFooter()
+			footer : sap.ui.jsfragment( 'js.ui.fragment.footer', oController )
 		});
 		oPage.addStyleClass('customPageWithFooter');
 		return oPage;
