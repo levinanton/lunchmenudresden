@@ -35,7 +35,7 @@
 	    	"menu" : "/studentenwerk/feeds/speiseplan.rss?mid=18",
 	    	"type" : "rss",
 	    	"period" : "day",
-	    	"address" : "Mommsenstr. 13, 01069 Dresden"
+	    	"address" : "Mommsenstra\u00DFe. 13, 01069 Dresden"
 		},{
 			"enabled" : false,
 			"id" : "neuemensa",
@@ -59,7 +59,7 @@
 	    	"menu" : "/suppenladen/pdf.php?week=0",
 	    	"type" : "pdf",
 	    	"period" : "week",
-	    	"address" : "N\u00F6thnitzer Str. 3, 01187 Dresden"
+	    	"address" : "N\u00F6thnitzer Stra\u00DFe 3, 01187 Dresden"
 		},{
 			"enabled" : true,
 			"id" : "manufaktur",
@@ -71,7 +71,7 @@
 	    	"menu" : "/manufaktur/?Speisen_%2F_Getr%C3%A4nke:Wochenkarte #menutable",
 	    	"type" : "htm",
 	    	"period" : "week",
-	    	"address" : "Chemnitzer Str. 84, 01187 Dresden"
+	    	"address" : "Chemnitzer Stra\u00DFe 84, 01187 Dresden"
 		},{
 			"enabled" : true,
 			"id" : "flora27",
@@ -83,7 +83,7 @@
 	    	"menu" : "/flora27/download/flora27-speisekarte.pdf",
 	    	"type" : "pdf",
 	    	"period" : "day",
-	    	"address" : "Chemnitzer Str. 78a, 01187 Dresden"
+	    	"address" : "Chemnitzer Stra\u00DFe 78a, 01187 Dresden"
 		},{
 			"enabled" : true,
 			"id" : "pastamania",
@@ -95,9 +95,9 @@
 	    	"menu" : "/ecm/cmisproxy/cmis/json/2ca5ea2e2e6c2fc0936ea045/root?objectId=JKhRLfjv8tObl6FSjiXcDYNMEGyNQ3bqJpEugw-z5Ak&cmisselector=content",
 	    	"type" : "img",
 	    	"period" : "day",
-	    	"address" : "Chemnitzer Str. 115, 01187 Dresden"
+	    	"address" : "Chemnitzer Stra\u00DFe 115, 01187 Dresden"
 		},{
-			"enabled" : true,
+			"enabled" : false,
 			"id" : "kardo",
 	    	"title" : "Kardo Pizzeria",
 	    	"location" : {
@@ -138,7 +138,7 @@
 	    	],
 	    	"type" : "htm",
 	    	"period" : "day",
-	    	"address" : "Chemnitzer Str. 96, 01187 Dresden"
+	    	"address" : "Chemnitzer Stra\u00DFe 96, 01187 Dresden"
 		},{
 			"enabled" : false,
 			"id" : "hoangdo",
@@ -173,10 +173,10 @@
 	    		"latitude" : 51.033023,
 	    	   	"longitude" : 13.707514
 	    	},
-	    	"menu" : "/holzstuebchen/aktuelles #imageSubtitle-5784903101",
-	    	"type" : "htm",
+	    	"menu" : "/dropbox/u/3428116/holzstuebchen.pdf",
+	    	"type" : "pdf",
 	    	"period" : "week",
-	    	"address" : "Zwickauer Str. 112, 01187 Dresden"
+	    	"address" : "Zwickauer Stra\u00DFe 112, 01187 Dresden"
 		},{
 			"enabled" : true,
 			"id" : "holidayinn",
@@ -188,7 +188,7 @@
 	    	"menu" : "/ecm/cmisproxy/cmis/json/2ca5ea2e2e6c2fc0936ea045/root?objectId=fWXZtaMnK_38xUf0zrDE28TioBtOFV1HaOcsbMmzmSg&cmisselector=content",
 	    	"type" : "img",
 	    	"period" : "week",
-	    	"address" : "Bamberger Str. 14, 01187 Dresden"
+	    	"address" : "Bamberger Stra\u00DFe 14, 01187 Dresden"
 		},{
 			"enabled" : true,
 			"id" : "maxaltstadt",
@@ -248,7 +248,7 @@
 	    	"menu" : "/dropbox/u/3428116/dubliner.pdf",
 	    	"type" : "pdf",
 	    	"period" : "week",
-	    	"address" : "Gewandhausstr. 7, 01067 Dresden"
+	    	"address" : "Gewandhausstra\u00DFe 7, 01067 Dresden"
 		},{
 			"enabled" : true,
 			"id" : "shamrock",
@@ -260,7 +260,7 @@
 	    	"menu" : "/dropbox/u/3428116/shamrock.pdf",
 	    	"type" : "pdf",
 	    	"period" : "week",
-	    	"address" : "Wilsdruffer Str. 20, 01067 Dresden"
+	    	"address" : "Wilsdruffer Stra\u00DFe 20, 01067 Dresden"
 		},{
 			"enabled" : true,
 			"id" : "augustobar",
@@ -296,7 +296,7 @@
 	    	"menu" : "/dropbox/u/3428116/kuppel.pdf",
 	    	"type" : "pdf",
 	    	"period" : "week",
-	    	"address" : "Wei\u00DFeritzstr. 3, 01067 Dresden"
+	    	"address" : "Wei\u00DFeritzstra\u00DFe 3, 01067 Dresden"
 		}
 	]	
 }
