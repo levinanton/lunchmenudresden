@@ -1,153 +1,173 @@
 {
-	"authenticationMethod": "none",
-    "routes": [
-    	{
-            "path": "/lunchmenudresdenfeedback",            
-            "target": {
-              "type": "destination",
-              "name": "lunchmenudresdenfeedback"
-            },
-            "description": "Feedback Service"
-        },{
-            "path": "/mpipks",            
-            "target": {
-              "type": "destination",
-              "name": "mpipks"
-            },
-            "description": "Max-Planck-Institut fuer Physik komplexer Systeme"
-        },{
-            "path": "/mpicpfs",            
-            "target": {
-              "type": "destination",
-              "name": "mpicpfs"
-            },
-            "description": "Max-Planck-Institut fuer Chemische Physik fester Stoffe"
-        },{
-            "path": "/manufaktur",            
-            "target": {
-              "type": "destination",
-              "name": "manufaktur"
-            },
-            "description": "Genuss-Manu-Faktur"
-        },{
-            "path": "/flora27",            
-            "target": {
-              "type": "destination",
-              "name": "flora27"
-            },
-            "description": "Flora 27 - Der Kaffeeladen"
-        },{
-            "path": "/studentenwerk",            
-            "target": {
-              "type": "destination",
-              "name": "studentenwerk"
-            },
-            "description": "Studentenwerk Dresden"
-        },{
-            "path": "/suppenladen",            
-            "target": {
-              "type": "destination",
-              "name": "suppenladen"
-            },
-            "description": "Suppen Laden Dresden"
-        },{
-            "path": "/ecm",            
-            "target": {
-              "type": "destination",
-              "name": "ecm"
-            },
-            "description": "ECM Service"
-        },{
-            "path": "/kardo",            
-            "target": {
-              "type": "destination",
-              "name": "kardo"
-            },
-            "description": "Kardo Pizzeria"
-        },{
-            "path": "/meliz",            
-            "target": {
-              "type": "destination",
-              "name": "meliz"
-            },
-            "description": "Meliz Doener"
-        },{
-            "path": "/hoangdo",            
-            "target": {
-              "type": "destination",
-              "name": "hoangdo"
-            },
-            "description": "Hoang Do Asia Euro Restaurant"
-        },{
-            "path": "/budapest",            
-            "target": {
-              "type": "destination",
-              "name": "budapest"
-            },
-            "description": "Ungarisches Restaurant Dresden Budapest"
-        },{
-            "path": "/holzstuebchen",            
-            "target": {
-              "type": "destination",
-              "name": "holzstuebchen"
-            },
-            "description": "Gaststaette Holzstuebchen"
-        },{
-            "path": "/maxdresden",            
-            "target": {
-              "type": "destination",
-              "name": "maxdresden"
-            },
-            "description": "Max Restaurant Dresden"
-        },{
-           "path": "/sapui5",            
-            "target": {
-              "type": "destination",
-              "name": "sapui5"
-            },
-            "description": "SAP UI5" 
-        },{
-           "path": "/elrodizio",            
-            "target": {
-              "type": "destination",
-              "name": "elrodizio"
-            },
-            "description": "El Rodizio" 
-        },{
-           "path": "/widmann",            
-            "target": {
-              "type": "destination",
-              "name": "widmann"
-            },
-            "description": "Widmann Gastronomie" 
-        },{
-           "path": "/altmarkt",            
-            "target": {
-              "type": "destination",
-              "name": "altmarkt"
-            },
-            "description": "Altmarkt Galerie Dresden" 
-        },{
-           "path": "/augustobar",            
-            "target": {
-              "type": "destination",
-              "name": "augustobar"
-            },
-            "description": "Augusto Bar" 
-        },{
-           "path": "/souperb",            
-            "target": {
-              "type": "destination",
-              "name": "souperb"
-            },
-            "description": "SOUPerb Dresden" 
-        },{
-           "path": "/dropbox",            
-            "target": {
-              "type": "destination",
-              "name": "dropbox"
-            },
-            "description": "Dropbox" 
-        }
-    ]	
+  "authenticationMethod": "none",
+  "routes": [
+    {
+      "path": "/lunchmenudresdenfeedback",
+      "target": {
+        "type": "destination",
+        "name": "lunchmenudresdenfeedback"
+      },
+      "description": "Feedback Service"
+    },
+    {
+      "path": "/mpipks",
+      "target": {
+        "type": "destination",
+        "name": "mpipks"
+      },
+      "description": "Max-Planck-Institut fuer Physik komplexer Systeme"
+    },
+    {
+      "path": "/mpicpfs",
+      "target": {
+        "type": "destination",
+        "name": "mpicpfs"
+      },
+      "description": "Max-Planck-Institut fuer Chemische Physik fester Stoffe"
+    },
+    {
+      "path": "/manufaktur",
+      "target": {
+        "type": "destination",
+        "name": "manufaktur"
+      },
+      "description": "Genuss-Manu-Faktur"
+    },
+    {
+      "path": "/flora27",
+      "target": {
+        "type": "destination",
+        "name": "flora27"
+      },
+      "description": "Flora 27 - Der Kaffeeladen"
+    },
+    {
+      "path": "/studentenwerk",
+      "target": {
+        "type": "destination",
+        "name": "studentenwerk"
+      },
+      "description": "Studentenwerk Dresden"
+    },
+    {
+      "path": "/suppenladen",
+      "target": {
+        "type": "destination",
+        "name": "suppenladen"
+      },
+      "description": "Suppen Laden Dresden"
+    },
+    {
+      "path": "/ecm",
+      "target": {
+        "type": "destination",
+        "name": "ecm"
+      },
+      "description": "ECM Service"
+    },
+    {
+      "path": "/kardo",
+      "target": {
+        "type": "destination",
+        "name": "kardo"
+      },
+      "description": "Kardo Pizzeria"
+    },
+    {
+      "path": "/meliz",
+      "target": {
+        "type": "destination",
+        "name": "meliz"
+      },
+      "description": "Meliz Doener"
+    },
+    {
+      "path": "/hoangdo",
+      "target": {
+        "type": "destination",
+        "name": "hoangdo"
+      },
+      "description": "Hoang Do Asia Euro Restaurant"
+    },
+    {
+      "path": "/budapest",
+      "target": {
+        "type": "destination",
+        "name": "budapest"
+      },
+      "description": "Ungarisches Restaurant Dresden Budapest"
+    },
+    {
+      "path": "/holzstuebchen",
+      "target": {
+        "type": "destination",
+        "name": "holzstuebchen"
+      },
+      "description": "Gaststaette Holzstuebchen"
+    },
+    {
+      "path": "/maxdresden",
+      "target": {
+        "type": "destination",
+        "name": "maxdresden"
+      },
+      "description": "Max Restaurant Dresden"
+    },
+    {
+      "path": "/sapui5",
+      "target": {
+        "type": "destination",
+        "name": "sapui5"
+      },
+      "description": "SAP UI5"
+    },
+    {
+      "path": "/elrodizio",
+      "target": {
+        "type": "destination",
+        "name": "elrodizio"
+      },
+      "description": "El Rodizio"
+    },
+    {
+      "path": "/widmann",
+      "target": {
+        "type": "destination",
+        "name": "widmann"
+      },
+      "description": "Widmann Gastronomie"
+    },
+    {
+      "path": "/altmarkt",
+      "target": {
+        "type": "destination",
+        "name": "altmarkt"
+      },
+      "description": "Altmarkt Galerie Dresden"
+    },
+    {
+      "path": "/augustobar",
+      "target": {
+        "type": "destination",
+        "name": "augustobar"
+      },
+      "description": "Augusto Bar"
+    },
+    {
+      "path": "/souperb",
+      "target": {
+        "type": "destination",
+        "name": "souperb"
+      },
+      "description": "SOUPerb Dresden"
+    },
+    {
+      "path": "/dropbox",
+      "target": {
+        "type": "destination",
+        "name": "dropbox"
+      },
+      "description": "Dropbox"
+    }
+  ]
 }

@@ -6,5 +6,6 @@
 	"HTM" : "assets/266px-HTML.svg.png",
 	"IMG" : "assets/jpeg-logo.png",
 	"SETTINGS" : "sap-icon://action-settings",
-	"MAP": "sap-icon://map"
+	"MAP": "sap-icon://map",
+	"SOURCE" : "assets/programming-wallpaper-480x272.jpg"
 }
