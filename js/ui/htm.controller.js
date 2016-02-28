@@ -1,22 +1,19 @@
-js.core.Controller.extend('js.ui.htm', {
+js.core.Controller.extend("js.ui.htm", {
 
-	onInit : function() {
-		this.getRouter().attachRouteMatched(this.onRouteMatched, this);
+	onInit: function() {
+		this.getRoute("htm").attachPatternMatched(this.onPatternMatched, this);
 	},
 
-	onRouteMatched : function(oEvent) {
+	onPatternMatched: function(oEvent) {
 		var oParameters = oEvent.getParameters();
-		if (oParameters.name !== 'htm') {
-			return;
-		}
 		this.navigateDetail(this.getView(), oParameters.arguments);
 	},
 
-	onBindingContextChange : function(oBindingContext) {
-		var sMenu = oBindingContext.getProperty('menu');
+	onBindingContextChange: function(oBindingContext) {
+		var sMenu = oBindingContext.getProperty("menu");
 		this.clear();
 		if (this.isArray(sMenu)) {
-			for ( var i in sMenu) {
+			for (var i in sMenu) {
 				this.append(i, sMenu[i]);
 			}
 		} else {
@@ -24,22 +21,22 @@ js.core.Controller.extend('js.ui.htm', {
 		}
 	},
 
-	clear : function() {
-		$('#htmViewDiv').empty();
+	clear: function() {
+		$("#htmViewDiv").empty();
 	},
 
-	append : function(iIndex, sMenu) {
+	append: function(iIndex, sMenu) {
 		$(document).ready(function() {
 			$.get(sMenu, function() {
-				var $newDiv = $('<span id="htmViewDiv-' + iIndex + '" />');
-				$('#htmViewDiv').append($newDiv);
-				$('#htmViewDiv'.concat('-', iIndex)).load(sMenu);
+				var $newDiv = $("<span id='htmViewDiv-" + iIndex + "' />");
+				$("#htmViewDiv").append($newDiv);
+				$("#htmViewDiv".concat("-", iIndex)).load(sMenu);
 			});
 		});
 	},
 
-	isArray : function(oObject) {
-		return Object.prototype.toString.call(oObject) === '[object Array]'
+	isArray: function(oObject) {
+		return Object.prototype.toString.call(oObject) === "[object Array]";
 	}
 
 });

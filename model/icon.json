@@ -7,5 +7,6 @@
 	"IMG" : "assets/jpeg-logo.png",
 	"SETTINGS" : "sap-icon://action-settings",
 	"MAP": "sap-icon://map",
-	"SOURCE" : "assets/programming-wallpaper-480x272.jpg"
+	"SOURCE" : "assets/programming-wallpaper-480x272.jpg",
+	"MENU" : "sap-icon://menu2"
 }

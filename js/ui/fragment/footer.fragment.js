@@ -11,13 +11,7 @@ sap.ui.jsfragment("js.ui.fragment.footer", {
 			href: {
 				path: "location",
 				formatter: function(oLocation) {
-					if (oLocation === null) {
-						return "";
-					}
-					var lat = oLocation.latitude;
-					var lon = oLocation.longitude;
-					var url = oController.getText("URL_MAP", [lat, lon]);
-					return url;
+					return oController.formatLocationLinkHref(oLocation);
 				}
 			}
 		});

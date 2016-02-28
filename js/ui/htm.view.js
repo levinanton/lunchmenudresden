@@ -1,29 +1,29 @@
-sap.ui.jsview('js.ui.htm', {
+sap.ui.jsview("js.ui.htm", {
 
-	getControllerName : function() {
-		return 'js.ui.htm';
+	getControllerName: function() {
+		return "js.ui.htm";
 	},
 
-	setBindingContext : function(oContext, sName) {
+	setBindingContext: function(oContext, sName) {
 		this.getController().onBindingContextChange(oContext);
 		return sap.ui.base.ManagedObject.prototype.setBindingContext.call(this,
-				oContext, sName);
+			oContext, sName);
 	},
 
-	createHTML : function() {
+	createHTML: function() {
 		return new sap.ui.core.HTML({
-			content : '<div id="htmViewDiv" />'
+			content: "<div id='htmViewDiv' />"
 		});
 	},
 
-	createContent : function(oController) {
+	createContent: function(oController) {
 		this.setDisplayBlock(true);
-		var oPage =  new sap.m.Page({
-			customHeader : oController.createBar(),
-			content : this.createHTML(),
-			footer : sap.ui.jsfragment( 'js.ui.fragment.footer', oController )
+		var oPage = new sap.m.Page({
+			customHeader: sap.ui.jsfragment("js.ui.fragment.header", oController),
+			content: this.createHTML(),
+			footer: sap.ui.jsfragment("js.ui.fragment.footer", oController)
 		});
-		oPage.addStyleClass('customPageWithFooter');
+		oPage.addStyleClass("customPageWithFooter");
 		return oPage;
 	}
 

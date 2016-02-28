@@ -2,25 +2,29 @@ jQuery.sap.require('sap.m.MessageToast');
 
 sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 
-	getEventBus : function() {
+	getEventBus: function() {
 		return this.getOwnerComponent().getEventBus();
 	},
 
-	getRouter : function() {
+	getRouter: function() {
 		return sap.ui.core.UIComponent.getRouterFor(this);
 	},
+	
+	getRoute: function(sName) {
+		return this.getRouter().getRoute(sName);
+	},
 
-	getText : function(sKey, oValues) {
+	getText: function(sKey, oValues) {
 		var oModel = this.getOwnerComponent().getModel('i18n');
 		var oResourceBundle = oModel.getResourceBundle();
 		return oResourceBundle.getText(sKey, oValues);
 	},
 
-	getSettings : function() {
+	getSettings: function() {
 		return this.getOwnerComponent().getModel('settings');
 	},
 
-	getBindingPathById : function(sId) {
+	getBindingPathById: function(sId) {
 		var oModel = this.getOwnerComponent().getModel();
 		var oData = oModel.getData();
 		var length = oData.poi.length;
@@ -35,13 +39,13 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 		return null;
 	},
 
-	onHeaderButtonPress : function(oEvent) {
+	onMenuButtonPress: function(oEvent) {
 		this.getEventBus().publish(Channel.APP, Event.NAVIGATE_MASTER, {
-			event : oEvent
+			event: oEvent
 		});
 	},
 
-	onBookmarkButtonPress : function(oEvent) {
+	onBookmarkButtonPress: function(oEvent) {
 		var oSource = oEvent.getSource();
 		var oSettings = this.getSettings();
 		var oBindingContext = oSource.getBindingContext();
@@ -55,16 +59,16 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 		}
 	},
 
-	navigateDetail : function(oView, arguments) {
+	navigateDetail: function(oView, arguments) {
 		var sId = arguments.id;
 		var sPath = this.getBindingPathById(sId);
 		oView.bindElement(sPath);
 		this.getEventBus().publish(Channel.APP, Event.NAVIGATE_DETAIL, {
-			id : sId
+			id: sId
 		});
 	},
 
-	formatBookmarkButtonIcon : function(sId, sType, oSource) {
+	formatBookmarkButtonIcon: function(sId, sType, oSource) {
 		var oSettings = this.getSettings();
 		if (oSettings.isBookmarked(sId, sType)) {
 			this.addButtonBookmarkStyle(oSource);
@@ -74,48 +78,29 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 		return 'sap-icon://bookmark';
 	},
 
-	addButtonBookmarkStyle : function(oControl) {
+	formatLocationLinkHref: function(oLocation) {
+		if (oLocation === null) {
+			return "";
+		}
+		var lat = oLocation.latitude;
+		var lon = oLocation.longitude;
+		var url = this.getText("URL_MAP", [lat, lon]);
+		return url;
+	},
+
+	addButtonBookmarkStyle: function(oControl) {
 		oControl.removeStyleClass('customIconGrey');
 		oControl.removeStyleClass('customIconRed');
 		oControl.addStyleClass('customIconRed');
 	},
 
-	removeButtonBookmarkStyle : function(oControl) {
+	removeButtonBookmarkStyle: function(oControl) {
 		oControl.removeStyleClass('customIconGrey');
 		oControl.removeStyleClass('customIconRed');
 		oControl.addStyleClass('customIconGrey');
 	},
 
-	createBar : function() {
-		var that = this;
-		var oBookmarkButton = new sap.m.Button({
-			press : function(oEvent) {
-				that.onBookmarkButtonPress(oEvent);
-			}
-		});
-		oBookmarkButton.bindProperty('icon', {
-			parts : [ 'id', 'type' ],
-			formatter : function(sId, sType) {
-				return that.formatBookmarkButtonIcon(sId, sType, this);
-			}
-		});
-		return new sap.m.Bar({
-			design : sap.m.BarDesign.Header,
-			contentLeft : new sap.m.Button({
-				icon : 'sap-icon://menu2',
-				visible : sap.ui.Device.system.phone,
-				press : function(oEvent) {
-					that.onHeaderButtonPress(oEvent);
-				}
-			}),
-			contentMiddle : new sap.m.Label({
-				text : '{title}'
-			}),
-			contentRight : oBookmarkButton
-		});
-	},
-
-	getTimestampParameter : function() {
+	getTimestampParameter: function() {
 		var oDate = new Date();
 		var year = oDate.getFullYear();
 		var month = oDate.getMonth();
@@ -124,59 +109,61 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 		var minute = oDate.getMinutes();
 		return '_timestamp='.concat(year, month, date, hour, minute);
 	},
+	
+	getContentHeightOffset : function() {
+		var headerHeight = 48;
+		var footerHeight = 32;
+		return headerHeight + footerHeight;
+	},
 
-	getCurrentPosition : function() {
+	getCurrentPosition: function() {
 		var oSettings = this.getSettings();
 		var sLocation = oSettings.getLocation();
 		if ("DRE03" === sLocation) {
-							this.getEventBus().publish(Channel.GEO, Event.LOCATE, {
-					latitude : 51.0331147,
-					longitude : 13.7107176
-					
-					
-				});
+			this.getEventBus().publish(Channel.GEO, Event.LOCATE, {
+				latitude: 51.0331147,
+				longitude: 13.7107176
+
+			});
 		} else if ("DRE04" === sLocation) {
-							this.getEventBus().publish(Channel.GEO, Event.LOCATE, {
-					latitude : 51.0511711,
-					longitude : 13.7339831
-					
-					
-				});
-		} else {
-					var that = this;
-		var oLocation = navigator.geolocation;
-		if (oLocation) {
-			oLocation.getCurrentPosition(function(oPosition) {
-				that.getEventBus().publish(Channel.GEO, Event.LOCATE, {
-					latitude : oPosition.coords.latitude,
-					longitude : oPosition.coords.longitude
-				});
-			}, function(oError) {
-				var sText = '';
-				switch (oError.code) {
-				case oError.PERMISSION_DENIED:
-					sText = 'User denied the request for Geolocation.'
-					break;
-				case oError.POSITION_UNAVAILABLE:
-					sText = 'Location information is unavailable.'
-					break;
-				case oError.TIMEOUT:
-					sText = 'The request to get user location timed out.'
-					break;
-				case oError.UNKNOWN_ERROR:
-				default:
-					sText = 'An unknown error occurred.'
-					break;
-				}
-				sap.m.MessageToast.show(sText);
+			this.getEventBus().publish(Channel.GEO, Event.LOCATE, {
+				latitude: 51.0511711,
+				longitude: 13.7339831
+
 			});
 		} else {
-			var sText = this.getText('TEXT_GEOLOCATION_NOT_SUPPORTED_ERROR');
-			sap.m.MessageToast.show(sText);
+			var that = this;
+			var oLocation = navigator.geolocation;
+			if (oLocation) {
+				oLocation.getCurrentPosition(function(oPosition) {
+					that.getEventBus().publish(Channel.GEO, Event.LOCATE, {
+						latitude: oPosition.coords.latitude,
+						longitude: oPosition.coords.longitude
+					});
+				}, function(oError) {
+					var sText = '';
+					switch (oError.code) {
+						case oError.PERMISSION_DENIED:
+							sText = 'User denied the request for Geolocation.'
+							break;
+						case oError.POSITION_UNAVAILABLE:
+							sText = 'Location information is unavailable.'
+							break;
+						case oError.TIMEOUT:
+							sText = 'The request to get user location timed out.'
+							break;
+						case oError.UNKNOWN_ERROR:
+						default:
+							sText = 'An unknown error occurred.'
+							break;
+					}
+					sap.m.MessageToast.show(sText);
+				});
+			} else {
+				var sText = this.getText('TEXT_GEOLOCATION_NOT_SUPPORTED_ERROR');
+				sap.m.MessageToast.show(sText);
+			}
 		}
-		}
-		
-		
 
 	}
 

@@ -83,7 +83,7 @@ sap.ui.jsview('js.ui.list', {
 		var oController = this.getController();
 		return new sap.m.Bar({
 			design : sap.m.BarDesign.Header,
-			contentMiddle : new sap.m.Label({
+			contentMiddle : new sap.m.Title({
 				text : '{i18n>LABEL_AROUND}'
 			}),
 			contentRight : new sap.m.Button({
