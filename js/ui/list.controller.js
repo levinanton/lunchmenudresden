@@ -1,39 +1,39 @@
 js.core.Controller.extend('js.ui.list', {
 
-	onInit : function() {
+	onInit: function() {
 		this.createFeedback();
 		this.createSettings();
 		var oEventBus = this.getEventBus();
 		oEventBus.subscribe(Channel.APP, Event.NAVIGATE_DETAIL,
-				this.onNavigateDetail, this);
+			this.onNavigateDetail, this);
 		oEventBus.subscribe(Channel.GEO, Event.LOCATE, this.onGeoLocate, this);
 	},
 
-	createFeedback : function() {
+	createFeedback: function() {
 		this.oFeedbackView = sap.ui.jsview('js.ui.feedback');
 		this.getView().addDependent(this.oFeedbackView.oPopover);
 	},
-	
-	createSettings : function() {
+
+	createSettings: function() {
 		this.oSettingsView = sap.ui.jsview('js.ui.settings');
 		this.getView().addDependent(this.oSettingsView.oPopover);
 	},
 
-	onLocateButtonPress : function(oEvent) {
+	onLocateMeButtonPress: function(oEvent) {
 		this.getCurrentPosition();
 	},
 
-	onFeedbackButtonPress : function(oEvent) {
+	onFeedbackButtonPress: function(oEvent) {
 		var oSource = oEvent.getSource();
 		this.oFeedbackView.openBy(oSource);
 	},
-	
-	onSettingsButtonPress : function(oEvent) {
+
+	onSettingsButtonPress: function(oEvent) {
 		var oSource = oEvent.getSource();
 		this.oSettingsView.openBy(oSource);
 	},
 
-	formatDistance : function(value) {
+	formatDistance: function(value) {
 		if (value == null || value == undefined || value == '') {
 			return '';
 		}
@@ -43,7 +43,7 @@ js.core.Controller.extend('js.ui.list', {
 		return value.toFixed(2) + ' ' + this.getText('LABEL_KILOMETER');
 	},
 
-	formatDistanceState : function(value) {
+	formatDistanceState: function(value) {
 		if (value == null || value == undefined || value == '') {
 			return sap.ui.core.ValueState.None;
 		}
@@ -56,7 +56,15 @@ js.core.Controller.extend('js.ui.list', {
 		return sap.ui.core.ValueState.Error;
 	},
 
-	onGeoLocate : function(sChannelId, sEventId, oData) {
+	formatHeaderTitle: function(poi) {
+		var enabledPoi = poi.filter(function(next) {
+			return next.enabled;
+		});
+
+		return this.getText("LABEL_AROUND", [enabledPoi.length]);
+	},
+
+	onGeoLocate: function(sChannelId, sEventId, oData) {
 		var oModel = this.getView().getModel();
 		var data = oModel.getData();
 		var length = data.poi.length;
@@ -69,10 +77,10 @@ js.core.Controller.extend('js.ui.list', {
 		oModel.updateBindings(false);
 		var isDescending = false;
 		this.getView().getList().getBinding('items').sort(
-				new sap.ui.model.Sorter('distance', isDescending));
+			new sap.ui.model.Sorter('distance', isDescending));
 	},
 
-	onNavigateDetail : function(sChannelId, sEventId, oData) {
+	onNavigateDetail: function(sChannelId, sEventId, oData) {
 		var sId = oData.id;
 		var oList = this.getView().getList();
 		var oItem = this.getListItemById(sId);
@@ -82,51 +90,51 @@ js.core.Controller.extend('js.ui.list', {
 		oList.setSelectedItem(oItem);
 	},
 
-	formatDescription : function(sValue) {
+	formatDescription: function(sValue) {
 		switch (sValue) {
-		case 'day':
-			return this.getText('LABEL_CURRENT_DAY');
-		case 'week':
-			return this.getText('LABEL_CURRENT_WEEK');
-		default:
-			return '';
+			case 'day':
+				return this.getText('LABEL_CURRENT_DAY');
+			case 'week':
+				return this.getText('LABEL_CURRENT_WEEK');
+			default:
+				return '';
 		}
 	},
 
-	formatIcon : function(sValue) {
+	formatIcon: function(sValue) {
 		var oModel = this.getView().getModel('icon');
 		return oModel.getProperty('/'.concat(sValue.toUpperCase()));
 	},
 
-	onListItemPress : function(oEvent) {
+	onListItemPress: function(oEvent) {
 		var oSelectedItem = oEvent.getSource().getSelectedItem();
 		var oBindingContext = oSelectedItem.getBindingContext();
 		var sId = oBindingContext.getProperty('id');
 		var sType = oBindingContext.getProperty('type');
 		var bNoHistoryEntry = true;
 		this.getRouter().navTo(sType, {
-			id : sId
+			id: sId
 		}, bNoHistoryEntry);
 		// FIX: something has changed in UI5 version, call set binding function manually
 		this.getRouter().getView('js.ui.'.concat(sType), 'JS').setBindingContext(oBindingContext, sId);
 	},
 
-	onStandardListItemPress : function(oEvent) {
+	onStandardListItemPress: function(oEvent) {
 		var oBindingContext = oEvent.getSource().getBindingContext();
 		var sId = oBindingContext.getProperty('id');
 		var sType = oBindingContext.getProperty('type');
 		var bNoHistoryEntry = true;
 		this.getRouter().navTo(sType, {
-			id : sId
+			id: sId
 		}, bNoHistoryEntry);
 		// FIX: something has changed in UI5 version, call set binding function manually
 		this.getRouter().getView('js.ui.'.concat(sType), 'JS').setBindingContext(oBindingContext, sId);
 	},
 
-	getListItemById : function(sId) {
+	getListItemById: function(sId) {
 		var oList = this.getView().getList();
 		var aItems = oList.getItems();
-		for ( var i in aItems) {
+		for (var i in aItems) {
 			var oItem = aItems[i];
 			var oBindingContext = oItem.getBindingContext();
 			var sItemId = oBindingContext.getProperty('id');
@@ -137,7 +145,7 @@ js.core.Controller.extend('js.ui.list', {
 		return null;
 	},
 
-	onAfterRendering : function(oEvent) {
+	onAfterRendering: function(oEvent) {
 		var that = this;
 		setTimeout(function() {
 			var oSettings = that.getSettings();
@@ -149,13 +157,13 @@ js.core.Controller.extend('js.ui.list', {
 			var sType = oBookmark.type;
 			var bNoHistoryEntry = true;
 			that.getRouter().navTo(sType, {
-				id : sId
+				id: sId
 			}, bNoHistoryEntry);
 		}, 500)
 		this.getCurrentPosition();
 	},
 
-	distanceInKilometers : function(oLocation1, oLocation2) {
+	distanceInKilometers: function(oLocation1, oLocation2) {
 		var dLatitude1 = oLocation1.latitude;
 		var dLongitude1 = oLocation1.longitude;
 
@@ -168,9 +176,8 @@ js.core.Controller.extend('js.ui.list', {
 		dLatitude2 = this.toRadians(dLatitude2);
 		dLongitude2 = this.toRadians(dLongitude2);
 
-		var dArg = Math.sin(dLatitude1) * Math.sin(dLatitude2)
-				+ Math.cos(dLatitude1) * Math.cos(dLatitude2)
-				* Math.cos(dLongitude1 - dLongitude2);
+		var dArg = Math.sin(dLatitude1) * Math.sin(dLatitude2) + Math.cos(dLatitude1) * Math.cos(dLatitude2) * Math.cos(dLongitude1 -
+			dLongitude2);
 
 		if (Math.abs(dArg) > 1) {
 			return 0.00;
@@ -179,7 +186,7 @@ js.core.Controller.extend('js.ui.list', {
 		return Math.acos(dArg) * 6371;
 	},
 
-	toRadians : function(value) {
+	toRadians: function(value) {
 		return value / 180.0 * Math.PI;
 	}
 
