@@ -12,6 +12,12 @@ sap.ui.jsview("js.ui.list", {
 		return this.getContent()[0].getContent()[0];
 	},
 
+	getFeedbackButton: function() {
+		var oPage = this.getContent()[0];
+		var oToolbar = oPage.getFooter();
+		return oToolbar.getContent()[2];
+	},
+
 	createStandardListItem: function() {
 		var oController = this.getController();
 		var oStandardListItem = new sap.m.StandardListItem({

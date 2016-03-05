@@ -7,6 +7,7 @@ js.core.Controller.extend('js.ui.list', {
 		oEventBus.subscribe(Channel.APP, Event.NAVIGATE_DETAIL,
 			this.onNavigateDetail, this);
 		oEventBus.subscribe(Channel.GEO, Event.LOCATE, this.onGeoLocate, this);
+		oEventBus.subscribe(Channel.APP, Event.SHOW_FEEDBACK, this.onShowFeedback, this);
 	},
 
 	createFeedback: function() {
@@ -26,6 +27,11 @@ js.core.Controller.extend('js.ui.list', {
 	onFeedbackButtonPress: function(oEvent) {
 		var oSource = oEvent.getSource();
 		this.oFeedbackView.openBy(oSource);
+	},
+	
+	onShowFeedback : function(sChannelId, sEventId, oData) {
+		var oFeedbackButton = this.getView().getFeedbackButton();
+		this.oFeedbackView.openBy(oFeedbackButton);
 	},
 
 	onSettingsButtonPress: function(oEvent) {

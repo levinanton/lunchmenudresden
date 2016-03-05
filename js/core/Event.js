@@ -10,6 +10,7 @@
 	Event.SHOW_MASTER = 'lunchmenudresdenappshowmaster';
 	Event.NAVIGATE_DETAIL = 'lunchmenudresdenappnavigatedetail';
 	Event.LOCATE = 'lunchmenudresdenapplocate';
+	Event.SHOW_FEEDBACK = 'lunchmenudresdenappshowfeedback';
 
 	root.Event = Event;
 

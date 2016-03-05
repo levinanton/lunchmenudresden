@@ -1,10 +1,3 @@
-.sapMCrslItemTableCell {
-    text-align: center;
-    vertical-align: middle;
-}
-.sapSuiteGT {
-    text-align: left;
-}
 #htmViewDiv span {
     color: black !important;
 }
@@ -29,10 +22,6 @@
 .customImgScrollContainer .sapMScrollContScroll {
     width: 100%;
 }
-/* .sapMPageWithFooter>section {
-bottom: 2em;
-} */
-
 .customLink {
     color: #ffffff !important;
     margin-left: 0 !important;

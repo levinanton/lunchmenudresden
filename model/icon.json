@@ -9,5 +9,6 @@
 	"MAP": "sap-icon://map",
 	"SOURCE" : "assets/programming-wallpaper-480x272.jpg",
 	"MENU" : "sap-icon://menu2",
-	"LOCATEME" : "sap-icon://locate-me"
+	"LOCATEME" : "sap-icon://locate-me",
+	"SAPUI5" : "sap-icon://sap-ui5"
 }
