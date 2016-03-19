@@ -16,9 +16,6 @@
 .customPageWithFooter>section {
     bottom: 2em !important;
 }
-.customGenericTile {
-    margin: 0.5em;
-}
 .customImgScrollContainer .sapMScrollContScroll {
     width: 100%;
 }

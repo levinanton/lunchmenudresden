@@ -1,11 +1,11 @@
 js.core.Controller.extend("js.ui.welcome", {
 
 	onUI5TilePress: function(oEvent) {
-		window.open("/sapui5/", "_blank");
+		window.open("https://sapui5.hana.ondemand.com", "_blank");
 	},
 
 	onSourceTilePress: function(oEvent) {
-		window.open("/lunchmenudresdensource/", "_blank");
+		window.open("https://github.com/levinanton/lunchmenudresden", "_blank");
 	},
 
 	onFeedbackTilePress: function(oEvent) {
