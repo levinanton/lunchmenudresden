@@ -1,6 +1,13 @@
-jQuery.sap.require('sap.m.MessageToast');
+jQuery.sap.require("sap.m.MessageToast");
 
-sap.ui.core.mvc.Controller.extend('js.core.Controller', {
+sap.ui.core.mvc.Controller.extend("js.core.Controller", {
+
+	onInit: function() {
+		var that = this;
+		$(document).ready(function() {
+			document.title = that.getText("LABEL_TITLE");
+		});
+	},
 
 	getEventBus: function() {
 		return this.getOwnerComponent().getEventBus();
@@ -9,19 +16,19 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 	getRouter: function() {
 		return sap.ui.core.UIComponent.getRouterFor(this);
 	},
-	
+
 	getRoute: function(sName) {
 		return this.getRouter().getRoute(sName);
 	},
 
 	getText: function(sKey, oValues) {
-		var oModel = this.getOwnerComponent().getModel('i18n');
+		var oModel = this.getOwnerComponent().getModel("i18n");
 		var oResourceBundle = oModel.getResourceBundle();
 		return oResourceBundle.getText(sKey, oValues);
 	},
 
 	getSettings: function() {
-		return this.getOwnerComponent().getModel('settings');
+		return this.getOwnerComponent().getModel("settings");
 	},
 
 	getBindingPathById: function(sId) {
@@ -29,8 +36,8 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 		var oData = oModel.getData();
 		var length = oData.poi.length;
 		for (var i = 0; i < length; i++) {
-			var sPath = '/poi/'.concat(i);
-			var sIdPath = sPath.concat('/id');
+			var sPath = "/poi/".concat(i);
+			var sIdPath = sPath.concat("/id");
 			var sNextId = oModel.getProperty(sIdPath);
 			if (sNextId === sId) {
 				return sPath;
@@ -49,8 +56,8 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 		var oSource = oEvent.getSource();
 		var oSettings = this.getSettings();
 		var oBindingContext = oSource.getBindingContext();
-		var sId = oBindingContext.getProperty('id');
-		var sType = oBindingContext.getProperty('type');
+		var sId = oBindingContext.getProperty("id");
+		var sType = oBindingContext.getProperty("type");
 		var isBookmarked = oSettings.setBookmark(sId, sType);
 		if (isBookmarked) {
 			this.addButtonBookmarkStyle(oSource);
@@ -75,7 +82,7 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 		} else {
 			this.removeButtonBookmarkStyle(oSource);
 		}
-		return 'sap-icon://bookmark';
+		return "sap-icon://bookmark";
 	},
 
 	formatLocationLinkHref: function(oLocation) {
@@ -89,15 +96,15 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 	},
 
 	addButtonBookmarkStyle: function(oControl) {
-		oControl.removeStyleClass('customIconGrey');
-		oControl.removeStyleClass('customIconRed');
-		oControl.addStyleClass('customIconRed');
+		oControl.removeStyleClass("customIconGrey");
+		oControl.removeStyleClass("customIconRed");
+		oControl.addStyleClass("customIconRed");
 	},
 
 	removeButtonBookmarkStyle: function(oControl) {
-		oControl.removeStyleClass('customIconGrey');
-		oControl.removeStyleClass('customIconRed');
-		oControl.addStyleClass('customIconGrey');
+		oControl.removeStyleClass("customIconGrey");
+		oControl.removeStyleClass("customIconRed");
+		oControl.addStyleClass("customIconGrey");
 	},
 
 	getTimestampParameter: function() {
@@ -107,10 +114,10 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 		var date = oDate.getDate();
 		var hour = oDate.getHours();
 		var minute = oDate.getMinutes();
-		return '_timestamp='.concat(year, month, date, hour, minute);
+		return "_timestamp=".concat(year, month, date, hour, minute);
 	},
-	
-	getContentHeightOffset : function() {
+
+	getContentHeightOffset: function() {
 		var headerHeight = 48;
 		var footerHeight = 32;
 		return headerHeight + footerHeight;
@@ -141,26 +148,26 @@ sap.ui.core.mvc.Controller.extend('js.core.Controller', {
 						longitude: oPosition.coords.longitude
 					});
 				}, function(oError) {
-					var sText = '';
+					var sText = "";
 					switch (oError.code) {
 						case oError.PERMISSION_DENIED:
-							sText = 'User denied the request for Geolocation.'
+							sText = "User denied the request for Geolocation";
 							break;
 						case oError.POSITION_UNAVAILABLE:
-							sText = 'Location information is unavailable.'
+							sText = "Location information is unavailable";
 							break;
 						case oError.TIMEOUT:
-							sText = 'The request to get user location timed out.'
+							sText = "The request to get user location timed out";
 							break;
 						case oError.UNKNOWN_ERROR:
 						default:
-							sText = 'An unknown error occurred.'
+							sText = "An unknown error occurred";
 							break;
 					}
 					sap.m.MessageToast.show(sText);
 				});
 			} else {
-				var sText = this.getText('TEXT_GEOLOCATION_NOT_SUPPORTED_ERROR');
+				var sText = this.getText("TEXT_GEOLOCATION_NOT_SUPPORTED_ERROR");
 				sap.m.MessageToast.show(sText);
 			}
 		}
