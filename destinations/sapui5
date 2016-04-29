@@ -1,0 +1,9 @@
+#
+#Fri Apr 29 17:14:30 UTC 2016
+Name=sapui5
+URL=https\://sapui5.hana.ondemand.com
+ProxyType=Internet
+Type=HTTP
+CloudConnectorVersion=2
+Authentication=NoAuthentication
+Description=SAP UI5

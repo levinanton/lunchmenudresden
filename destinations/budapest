@@ -1,0 +1,9 @@
+#
+#Fri Apr 29 17:13:31 UTC 2016
+Name=budapest
+URL=http\://budapest-dresden.de
+ProxyType=Internet
+Type=HTTP
+CloudConnectorVersion=2
+Authentication=NoAuthentication
+Description=Ungarisches Restaurant Dresden Budapest

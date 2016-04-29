@@ -1,0 +1,9 @@
+#
+#Fri Apr 29 17:14:33 UTC 2016
+Name=studentenwerk
+URL=http\://www.studentenwerk-dresden.de
+ProxyType=Internet
+Type=HTTP
+CloudConnectorVersion=2
+Authentication=NoAuthentication
+Description=Studentenwerk Dresden

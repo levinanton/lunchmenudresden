@@ -1,0 +1,9 @@
+#
+#Fri Apr 29 17:13:48 UTC 2016
+Name=flora27
+URL=http\://www.kaffeeservice-jw.de
+ProxyType=Internet
+Type=HTTP
+CloudConnectorVersion=2
+Authentication=NoAuthentication
+Description=Flora 27 - Der Kaffeeladen

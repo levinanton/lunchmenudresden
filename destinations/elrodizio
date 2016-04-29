@@ -1,0 +1,9 @@
+#
+#Fri Apr 29 17:13:47 UTC 2016
+Name=elrodizio
+URL=http\://elrodizio.de
+ProxyType=Internet
+Type=HTTP
+CloudConnectorVersion=2
+Authentication=NoAuthentication
+Description=El Rodizio

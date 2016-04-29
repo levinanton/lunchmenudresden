@@ -1,0 +1,9 @@
+#
+#Fri Apr 29 17:14:08 UTC 2016
+Name=lunchmenudresdensource
+URL=https\://github.com/levinanton/lunchmenudresden
+ProxyType=Internet
+Type=HTTP
+CloudConnectorVersion=2
+Authentication=NoAuthentication
+Description=Lunch Menu Dresden GitHub

@@ -1,0 +1,9 @@
+#
+#Fri Apr 29 17:13:30 UTC 2016
+Name=augustobar
+URL=http\://augustobar.de
+ProxyType=Internet
+Type=HTTP
+CloudConnectorVersion=2
+Authentication=NoAuthentication
+Description=Augusto Bar

@@ -1,0 +1,9 @@
+#
+#Fri Apr 29 17:14:02 UTC 2016
+Name=lunchmenudresdenfeedback
+URL=https\://feedback-p1940757062trial.hanatrial.ondemand.com\:443/api/v2/apps/f5742847-1fd7-4968-9b7d-02d39712c107/posts
+ProxyType=Internet
+Type=HTTP
+CloudConnectorVersion=2
+Authentication=NoAuthentication
+Description=Feedback Service

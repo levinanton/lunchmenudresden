@@ -1,0 +1,9 @@
+#
+#Fri Apr 29 17:14:37 UTC 2016
+Name=widmann
+URL=http\://widmann-gastronomie.de
+ProxyType=Internet
+Type=HTTP
+CloudConnectorVersion=2
+Authentication=NoAuthentication
+Description=Widmann Gastronomie
