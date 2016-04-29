@@ -296,5 +296,17 @@
 		"type": "pdf",
 		"period": "week",
 		"address": "Wei\u00DFeritzstra\u00DFe 3, 01067 Dresden"
+	}, {
+		"enabled": true,
+		"id": "aposto",
+		"title": "Aposto",
+		"location": {
+			"latitude": 51.0484552,
+			"longitude": 13.7364541
+		},
+		"menu": "/aposto/ #widget_4",
+		"type": "htm",
+		"period": "week",
+		"address": "Seestra\u00DFe 10, 01067 Dresden"
 	}]
 }

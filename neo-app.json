@@ -154,5 +154,12 @@
 			"name": "lunchmenudresdensource"
 		},
 		"description": "Lunch Menu Dresden sources on GitHub"
+	}, {
+		"path": "/aposto",
+		"target": {
+			"type": "destination",
+			"name": "aposto"
+		},
+		"description": "Aposto Dresden"
 	}]
 }
