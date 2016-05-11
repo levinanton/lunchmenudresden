@@ -91,7 +91,7 @@
 			"latitude": 51.029910,
 			"longitude": 13.708097
 		},
-		"menu": "/ecm/cmisproxy/cmis/json/2ca5ea2e2e6c2fc0936ea045/root?objectId=JKhRLfjv8tObl6FSjiXcDYNMEGyNQ3bqJpEugw-z5Ak&cmisselector=content",
+		"menu": "/ecm/2ca5ea2e2e6c2fc0936ea045/root?objectId=JKhRLfjv8tObl6FSjiXcDYNMEGyNQ3bqJpEugw-z5Ak&cmisselector=content",
 		"type": "img",
 		"period": "day",
 		"address": "Chemnitzer Stra\u00DFe 115, 01187 Dresden"
@@ -184,7 +184,7 @@
 			"latitude": 51.0337139,
 			"longitude": 13.713004
 		},
-		"menu": "/ecm/cmisproxy/cmis/json/2ca5ea2e2e6c2fc0936ea045/root?objectId=fWXZtaMnK_38xUf0zrDE28TioBtOFV1HaOcsbMmzmSg&cmisselector=content",
+		"menu": "/ecm/2ca5ea2e2e6c2fc0936ea045/root?objectId=fWXZtaMnK_38xUf0zrDE28TioBtOFV1HaOcsbMmzmSg&cmisselector=content",
 		"type": "img",
 		"period": "week",
 		"address": "Bamberger Stra\u00DFe 14, 01187 Dresden"
@@ -232,7 +232,7 @@
 			"latitude": 51.0501938,
 			"longitude": 13.7345191
 		},
-		"menu": "/ecm/cmisproxy/cmis/json/2ca5ea2e2e6c2fc0936ea045/root?objectId=o0p-2fWflkN0JovYKFHlL1Fkqtf61re-jnCKdVCqow8&cmisselector=content",
+		"menu": "/ecm/2ca5ea2e2e6c2fc0936ea045/root?objectId=o0p-2fWflkN0JovYKFHlL1Fkqtf61re-jnCKdVCqow8&cmisselector=content",
 		"type": "img",
 		"period": "week",
 		"address": "Webergasse 1, 01067 Dresden"
