@@ -7,5 +7,5 @@ Authentication=BasicAuthentication
 Name=ecm
 CloudConnectorVersion=2
 ProxyType=Internet
-URL=https\://hcproxyp1940757062trial.hanatrial.ondemand.com/proxy/cmis/json
+URL=https\://ecmproxyp1940757062trial.hanatrial.ondemand.com/proxy/cmis/json
 User=p1940757062
