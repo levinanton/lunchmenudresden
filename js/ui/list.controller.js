@@ -1,8 +1,12 @@
-js.core.Controller.extend('js.ui.list', {
+js.core.Controller.extend("js.ui.list", {
 
 	onInit: function() {
 		this.createFeedback();
 		this.createSettings();
+		this.subscribe();
+	},
+
+	subscribe: function() {
 		var oEventBus = this.getEventBus();
 		oEventBus.subscribe(Channel.APP, Event.NAVIGATE_DETAIL,
 			this.onNavigateDetail, this);
@@ -11,12 +15,12 @@ js.core.Controller.extend('js.ui.list', {
 	},
 
 	createFeedback: function() {
-		this.oFeedbackView = sap.ui.jsview('js.ui.feedback');
+		this.oFeedbackView = sap.ui.jsview("js.ui.feedback");
 		this.getView().addDependent(this.oFeedbackView.oPopover);
 	},
 
 	createSettings: function() {
-		this.oSettingsView = sap.ui.jsview('js.ui.settings');
+		this.oSettingsView = sap.ui.jsview("js.ui.settings");
 		this.getView().addDependent(this.oSettingsView.oPopover);
 	},
 
@@ -28,8 +32,8 @@ js.core.Controller.extend('js.ui.list', {
 		var oSource = oEvent.getSource();
 		this.oFeedbackView.openBy(oSource);
 	},
-	
-	onShowFeedback : function(sChannelId, sEventId, oData) {
+
+	onShowFeedback: function(sChannelId, sEventId, oData) {
 		var oFeedbackButton = this.getView().getFeedbackButton();
 		this.oFeedbackView.openBy(oFeedbackButton);
 	},
@@ -40,17 +44,17 @@ js.core.Controller.extend('js.ui.list', {
 	},
 
 	formatDistance: function(value) {
-		if (value == null || value == undefined || value == '') {
-			return '';
+		if (value === null || value === undefined || value === "") {
+			return "";
 		}
 		if (value < 1) {
-			return value.toFixed(3) * 1000 + ' ' + this.getText('LABEL_METER');
+			return this.getText("LABEL_METER", [value.toFixed(3) * 1000]);
 		}
-		return value.toFixed(2) + ' ' + this.getText('LABEL_KILOMETER');
+		return this.getText("LABEL_KILOMETER", [value.toFixed(2)]);
 	},
 
 	formatDistanceState: function(value) {
-		if (value == null || value == undefined || value == '') {
+		if (value === null || value === undefined || value === "") {
 			return sap.ui.core.ValueState.None;
 		}
 		if (value < 1) {
@@ -66,7 +70,6 @@ js.core.Controller.extend('js.ui.list', {
 		var enabledPoi = poi.filter(function(next) {
 			return next.enabled;
 		});
-
 		return this.getText("LABEL_AROUND", [enabledPoi.length]);
 	},
 
@@ -75,15 +78,15 @@ js.core.Controller.extend('js.ui.list', {
 		var data = oModel.getData();
 		var length = data.poi.length;
 		for (var i = 0; i < length; i++) {
-			var sPath = '/poi/'.concat(i);
+			var sPath = "/poi/".concat(i);
 			var oNext = oModel.getProperty(sPath);
 			var distance = this.distanceInKilometers(oData, oNext.location);
 			oNext.distance = distance;
 		}
 		oModel.updateBindings(false);
 		var isDescending = false;
-		this.getView().getList().getBinding('items').sort(
-			new sap.ui.model.Sorter('distance', isDescending));
+		this.getView().getList().getBinding("items").sort(
+			new sap.ui.model.Sorter("distance", isDescending));
 	},
 
 	onNavigateDetail: function(sChannelId, sEventId, oData) {
@@ -94,47 +97,46 @@ js.core.Controller.extend('js.ui.list', {
 			return;
 		}
 		oList.setSelectedItem(oItem);
+		var oBindingContext = oItem.getBindingContext();
+		var sType = oBindingContext.getProperty("type");
+		this.getRouter().getView("js.ui.".concat(sType), "JS").setBindingContext(oBindingContext, sId);
 	},
 
 	formatDescription: function(sValue) {
 		switch (sValue) {
-			case 'day':
-				return this.getText('LABEL_CURRENT_DAY');
-			case 'week':
-				return this.getText('LABEL_CURRENT_WEEK');
+			case "day":
+				return this.getText("LABEL_CURRENT_DAY");
+			case "week":
+				return this.getText("LABEL_CURRENT_WEEK");
 			default:
-				return '';
+				return "";
 		}
 	},
 
 	formatIcon: function(sValue) {
-		var oModel = this.getView().getModel('icon');
-		return oModel.getProperty('/'.concat(sValue.toUpperCase()));
+		var oModel = this.getView().getModel("icon");
+		return oModel.getProperty("/".concat(sValue.toUpperCase()));
 	},
 
 	onListItemPress: function(oEvent) {
 		var oSelectedItem = oEvent.getSource().getSelectedItem();
 		var oBindingContext = oSelectedItem.getBindingContext();
-		var sId = oBindingContext.getProperty('id');
-		var sType = oBindingContext.getProperty('type');
+		var sId = oBindingContext.getProperty("id");
+		var sType = oBindingContext.getProperty("type");
 		var bNoHistoryEntry = true;
 		this.getRouter().navTo(sType, {
 			id: sId
 		}, bNoHistoryEntry);
-		// FIX: something has changed in UI5 version, call set binding function manually
-		this.getRouter().getView('js.ui.'.concat(sType), 'JS').setBindingContext(oBindingContext, sId);
 	},
 
 	onStandardListItemPress: function(oEvent) {
 		var oBindingContext = oEvent.getSource().getBindingContext();
-		var sId = oBindingContext.getProperty('id');
-		var sType = oBindingContext.getProperty('type');
+		var sId = oBindingContext.getProperty("id");
+		var sType = oBindingContext.getProperty("type");
 		var bNoHistoryEntry = true;
 		this.getRouter().navTo(sType, {
 			id: sId
 		}, bNoHistoryEntry);
-		// FIX: something has changed in UI5 version, call set binding function manually
-		this.getRouter().getView('js.ui.'.concat(sType), 'JS').setBindingContext(oBindingContext, sId);
 	},
 
 	getListItemById: function(sId) {
@@ -143,7 +145,7 @@ js.core.Controller.extend('js.ui.list', {
 		for (var i in aItems) {
 			var oItem = aItems[i];
 			var oBindingContext = oItem.getBindingContext();
-			var sItemId = oBindingContext.getProperty('id');
+			var sItemId = oBindingContext.getProperty("id");
 			if (sItemId === sId) {
 				return oItem;
 			}
@@ -165,7 +167,7 @@ js.core.Controller.extend('js.ui.list', {
 			that.getRouter().navTo(sType, {
 				id: sId
 			}, bNoHistoryEntry);
-		}, 500)
+		}, 500);
 		this.getCurrentPosition();
 	},
 
