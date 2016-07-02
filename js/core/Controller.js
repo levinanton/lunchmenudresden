@@ -69,10 +69,25 @@ sap.ui.core.mvc.Controller.extend("js.core.Controller", {
 	navigateDetail: function(oView, arguments) {
 		var sId = arguments.id;
 		var sPath = this.getBindingPathById(sId);
+		if (sPath === null) {
+			this.display404();
+			return;
+		}
 		oView.bindElement(sPath);
 		this.getEventBus().publish(Channel.APP, Event.NAVIGATE_DETAIL, {
 			id: sId
 		});
+	},
+
+	navigateWelcome: function() {
+		var bNoHistoryEntry = true;
+		this.getRouter().navTo("welcome");
+		this.getEventBus().publish(Channel.APP, Event.NAVIGATE_WELCOME, {});
+	},
+
+	display404: function() {
+		this.getRouter().getTargets().display("404");
+		this.getEventBus().publish(Channel.APP, Event.DISPLAY_404, {});
 	},
 
 	formatBookmarkButtonIcon: function(sId, sType, oSource) {

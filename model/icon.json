@@ -8,7 +8,7 @@
 	"SETTINGS" : "sap-icon://action-settings",
 	"MAP": "sap-icon://map",
 	"SOURCE" : "assets/programming-wallpaper-480x272.jpg",
-	"MENU" : "sap-icon://menu2",
+	"BACK" : "sap-icon://nav-back",
 	"LOCATEME" : "sap-icon://locate-me",
 	"SAPUI5" : "sap-icon://sap-ui5"
 }

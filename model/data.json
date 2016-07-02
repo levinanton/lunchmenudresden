@@ -67,7 +67,7 @@
 			"latitude": 51.030592,
 			"longitude": 13.708422
 		},
-		"menu": "/manufaktur/?Speisen_%2F_Getr%C3%A4nke:Wochenkarte #menutable",
+		"menu": "/manufaktur/?Speisen_%2F_Getränke:Speisenkarte_10-17_Uhr #menutable",
 		"type": "htm",
 		"period": "week",
 		"address": "Chemnitzer Stra\u00DFe 84, 01187 Dresden"
@@ -153,7 +153,7 @@
 		"period": "day",
 		"address": "F.-C.-Weiskopf-Platz 9, 01187 Dresden"
 	}, {
-		"enabled": true,
+		"enabled": false,
 		"id": "budapest",
 		"title": "Restaurant Budapest",
 		"location": {
@@ -208,8 +208,8 @@
 			"latitude": 51.0510159,
 			"longitude": 13.7355495
 		},
-		"menu": "/elrodizio/speisen/mittagskarte.html #menu",
-		"type": "htm",
+		"menu": "/elrodizio/files/monatskarte_rodizio.pdf",
+		"type": "pdf",
 		"period": "week",
 		"address": "Wilsdruffer Stra\u00DFe 22, 01067 Dresden"
 	}, {

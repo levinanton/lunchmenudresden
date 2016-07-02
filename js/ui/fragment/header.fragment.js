@@ -13,7 +13,7 @@ sap.ui.jsfragment("js.ui.fragment.header", {
 			}
 		});
 		var oMenuButton = new sap.m.Button({
-			icon: "{icon>/MENU}",
+			icon: "{icon>/BACK}",
 			visible: sap.ui.Device.system.phone,
 			press: function(oEvent) {
 				oController.onMenuButtonPress(oEvent);

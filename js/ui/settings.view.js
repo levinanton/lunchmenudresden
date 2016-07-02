@@ -10,11 +10,10 @@ sap.ui.jsview('js.ui.settings', {
 		var oSegmentedButtonItem = new sap.m.SegmentedButtonItem({
 			text : "{location>text}",
 			key : "{location>key}"
-			/*width : "40px"*/
 		});
 		var oSegmentedButton = new sap.m.SegmentedButton({
 			selectedKey : "{settings>/location}",
-			/*width : "100%",*/
+			width : "300px",
 			select : function(oEvent) {
 				oController.handleSelect(oEvent);
 			}

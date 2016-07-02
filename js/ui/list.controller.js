@@ -4,6 +4,7 @@ js.core.Controller.extend("js.ui.list", {
 		this.createFeedback();
 		this.createSettings();
 		this.subscribe();
+		this.getRouter().attachBypassed(this.onBypassed, this);
 	},
 
 	subscribe: function() {
@@ -12,6 +13,8 @@ js.core.Controller.extend("js.ui.list", {
 			this.onNavigateDetail, this);
 		oEventBus.subscribe(Channel.GEO, Event.LOCATE, this.onGeoLocate, this);
 		oEventBus.subscribe(Channel.APP, Event.SHOW_FEEDBACK, this.onShowFeedback, this);
+		oEventBus.subscribe(Channel.APP, Event.NAVIGATE_WELCOME, this.onNavigateWelcome, this);
+		oEventBus.subscribe(Channel.APP, Event.DISPLAY_404, this.onDisplay404, this);
 	},
 
 	createFeedback: function() {
@@ -22,6 +25,10 @@ js.core.Controller.extend("js.ui.list", {
 	createSettings: function() {
 		this.oSettingsView = sap.ui.jsview("js.ui.settings");
 		this.getView().addDependent(this.oSettingsView.oPopover);
+	},
+
+	onBypassed: function() {
+		this.removeListSelection();
 	},
 
 	onLocateMeButtonPress: function(oEvent) {
@@ -41,6 +48,11 @@ js.core.Controller.extend("js.ui.list", {
 	onSettingsButtonPress: function(oEvent) {
 		var oSource = oEvent.getSource();
 		this.oSettingsView.openBy(oSource);
+	},
+
+	removeListSelection: function() {
+		var oList = this.getView().getList();
+		oList.removeSelections(true);
 	},
 
 	formatDistance: function(value) {
@@ -87,6 +99,14 @@ js.core.Controller.extend("js.ui.list", {
 		var isDescending = false;
 		this.getView().getList().getBinding("items").sort(
 			new sap.ui.model.Sorter("distance", isDescending));
+	},
+
+	onNavigateWelcome: function(sChannelId, sEventId, oData) {
+		this.removeListSelection();
+	},
+
+	onDisplay404: function(sChannelId, sEventId, oData) {
+		this.removeListSelection();
 	},
 
 	onNavigateDetail: function(sChannelId, sEventId, oData) {

@@ -1,7 +1,7 @@
 js.core.Controller.extend("js.ui.welcome", {
 
 	onUI5TilePress: function(oEvent) {
-		window.open("https://sapui5.hana.ondemand.com", "_blank");
+		window.open("https://openui5.hana.ondemand.com", "_blank");
 	},
 
 	onSourceTilePress: function(oEvent) {
