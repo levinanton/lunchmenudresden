@@ -308,5 +308,17 @@
 		"type": "htm",
 		"period": "week",
 		"address": "Seestra\u00DFe 10, 01067 Dresden"
+	}, {
+		"enabled": true,
+		"id": "enchilada",
+		"title": "Enchilada",
+		"location": {
+			"latitude": 51.0510159,
+			"longitude": 13.7355495
+		},
+		"menu": "/enchilada/restaurant #widget_2",
+		"type": "htm",
+		"period": "week",
+		"address": "Wilsdruffer Stra\u00DFe 22, 01067 Dresden"
 	}]
 }

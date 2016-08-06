@@ -184,6 +184,14 @@
         "name": "aposto"
       },
       "description": "Aposto Dresden"
+    },
+    {
+      "path": "/enchilada",
+      "target": {
+        "type": "destination",
+        "name": "enchilada"
+      },
+      "description": "Enchilada Dresden"
     }
   ],
   "cacheControl": [
