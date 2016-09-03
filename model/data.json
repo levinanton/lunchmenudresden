@@ -208,8 +208,8 @@
 			"latitude": 51.0510159,
 			"longitude": 13.7355495
 		},
-		"menu": "/elrodizio/files/monatskarte_rodizio.pdf",
-		"type": "pdf",
+		"menu": "/elrodizio/speisen/lunchkarte.html #menu",
+		"type": "htm",
 		"period": "week",
 		"address": "Wilsdruffer Stra\u00DFe 22, 01067 Dresden"
 	}, {
@@ -237,7 +237,7 @@
 		"period": "week",
 		"address": "Webergasse 1, 01067 Dresden"
 	}, {
-		"enabled": true,
+		"enabled": false,
 		"id": "dubliner",
 		"title": "The Dubliner",
 		"location": {
