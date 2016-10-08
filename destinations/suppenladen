@@ -1,7 +1,7 @@
 #
 #Fri Apr 29 17:14:36 UTC 2016
 Name=suppenladen
-URL=http\://suppenladen.com
+URL=http\://suppenladen-dresden.de
 ProxyType=Internet
 Type=HTTP
 CloudConnectorVersion=2

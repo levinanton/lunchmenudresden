@@ -55,8 +55,10 @@
 			"latitude": 51.029074,
 			"longitude": 13.708142
 		},
-		"menu": "/suppenladen/pdf.php?week=0",
-		"type": "pdf",
+		"menu": [
+			"/suppenladen/menu/suppen #page"
+		],
+		"type": "htm",
 		"period": "week",
 		"address": "N\u00F6thnitzer Stra\u00DFe 3, 01187 Dresden"
 	}, {
