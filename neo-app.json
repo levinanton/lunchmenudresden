@@ -192,6 +192,14 @@
         "name": "enchilada"
       },
       "description": "Enchilada Dresden"
+    },
+    {
+      "path": "/central",
+      "target": {
+        "type": "destination",
+        "name": "central"
+      },
+      "description": "Cafe Central"
     }
   ],
   "cacheControl": [

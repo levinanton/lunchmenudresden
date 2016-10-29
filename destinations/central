@@ -1,0 +1,9 @@
+#
+#Sat Oct 29 18:28:33 UTC 2016
+Name=central
+URL=http\://karten.essbar-catering.de
+ProxyType=Internet
+Type=HTTP
+CloudConnectorVersion=2
+Authentication=NoAuthentication
+Description=Cafe Central
