@@ -10,7 +10,8 @@
 		"menu": "/mpipks/fileadmin/user_upload/MPIPKS/Institute/Infrastructure/Cafeteria/menu_cur_de.pdf",
 		"type": "pdf",
 		"period": "week",
-		"address": "N\u00F6thnitzer Stra\u00DFe 38, 01187 Dresden"
+		"address": "N\u00F6thnitzer Stra\u00DFe 38, 01187 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "mpicpfs",
@@ -22,7 +23,8 @@
 		"menu": "/mpicpfs/web/Aktuelles/Menu/default_data/menu.pdf",
 		"type": "pdf",
 		"period": "week",
-		"address": "N\u00F6thnitzer Stra\u00DFe 48, 01187 Dresden"
+		"address": "N\u00F6thnitzer Stra\u00DFe 48, 01187 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "altemensa",
@@ -34,7 +36,8 @@
 		"menu": "/studentenwerk/feeds/speiseplan.rss?mid=18",
 		"type": "rss",
 		"period": "day",
-		"address": "Mommsenstra\u00DFe. 13, 01069 Dresden"
+		"address": "Mommsenstra\u00DFe. 13, 01069 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": false,
 		"id": "neuemensa",
@@ -46,7 +49,8 @@
 		"menu": "/studentenwerk/feeds/speiseplan.rss?mid=8",
 		"type": "rss",
 		"period": "day",
-		"address": "Bergstra\u00DFe 51, 01069 Dresden"
+		"address": "Bergstra\u00DFe 51, 01069 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "suppenladen",
@@ -60,7 +64,8 @@
 		],
 		"type": "htm",
 		"period": "week",
-		"address": "N\u00F6thnitzer Stra\u00DFe 3, 01187 Dresden"
+		"address": "N\u00F6thnitzer Stra\u00DFe 3, 01187 Dresden",
+		"sodexo": true
 	}, {
 		"enabled": true,
 		"id": "manufaktur",
@@ -72,7 +77,8 @@
 		"menu": "/manufaktur/?Speisen_%2F_Getränke:Speisenkarte_10-17_Uhr #menutable",
 		"type": "htm",
 		"period": "week",
-		"address": "Chemnitzer Stra\u00DFe 84, 01187 Dresden"
+		"address": "Chemnitzer Stra\u00DFe 84, 01187 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "flora27",
@@ -84,7 +90,8 @@
 		"menu": "/flora27/download/flora27-speisekarte.pdf",
 		"type": "pdf",
 		"period": "day",
-		"address": "Chemnitzer Stra\u00DFe 78a, 01187 Dresden"
+		"address": "Chemnitzer Stra\u00DFe 78a, 01187 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "pastamania",
@@ -96,7 +103,8 @@
 		"menu": "/ecm/2ca5ea2e2e6c2fc0936ea045/root?objectId=JKhRLfjv8tObl6FSjiXcDYNMEGyNQ3bqJpEugw-z5Ak&cmisselector=content",
 		"type": "img",
 		"period": "day",
-		"address": "Chemnitzer Stra\u00DFe 115, 01187 Dresden"
+		"address": "Chemnitzer Stra\u00DFe 115, 01187 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": false,
 		"id": "kardo",
@@ -112,7 +120,8 @@
 		],
 		"type": "htm",
 		"period": "day",
-		"address": "Plauenscher Ring 2, 01187 Dresden"
+		"address": "Plauenscher Ring 2, 01187 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "meliz",
@@ -139,7 +148,8 @@
 		],
 		"type": "htm",
 		"period": "day",
-		"address": "Chemnitzer Stra\u00DFe 96, 01187 Dresden"
+		"address": "Chemnitzer Stra\u00DFe 96, 01187 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": false,
 		"id": "hoangdo",
@@ -153,7 +163,8 @@
 		],
 		"type": "htm",
 		"period": "day",
-		"address": "F.-C.-Weiskopf-Platz 9, 01187 Dresden"
+		"address": "F.-C.-Weiskopf-Platz 9, 01187 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": false,
 		"id": "budapest",
@@ -165,7 +176,8 @@
 		"menu": "/budapest/ #sidebar_menu",
 		"type": "htm",
 		"period": "day",
-		"address": "Hofm\u00FChlenstra\u00DFe 14, 01187 Dresden"
+		"address": "Hofm\u00FChlenstra\u00DFe 14, 01187 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "holzstuebchen",
@@ -177,7 +189,8 @@
 		"menu": "/holzstuebchen/aktuelles #content_area",
 		"type": "htm",
 		"period": "week",
-		"address": "Zwickauer Stra\u00DFe 112, 01187 Dresden"
+		"address": "Zwickauer Stra\u00DFe 112, 01187 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "holidayinn",
@@ -189,7 +202,8 @@
 		"menu": "/ecm/2ca5ea2e2e6c2fc0936ea045/root?objectId=fWXZtaMnK_38xUf0zrDE28TioBtOFV1HaOcsbMmzmSg&cmisselector=content",
 		"type": "img",
 		"period": "week",
-		"address": "Bamberger Stra\u00DFe 14, 01187 Dresden"
+		"address": "Bamberger Stra\u00DFe 14, 01187 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "maxaltstadt",
@@ -201,7 +215,8 @@
 		"menu": "/dropbox/u/3428116/max.pdf",
 		"type": "pdf",
 		"period": "week",
-		"address": "Wilsdruffer Stra\u00DFe 24, 01067 Dresden"
+		"address": "Wilsdruffer Stra\u00DFe 24, 01067 Dresden",
+		"sodexo": true
 	}, {
 		"enabled": true,
 		"id": "elrodizio",
@@ -213,7 +228,8 @@
 		"menu": "/elrodizio/speisen/lunchkarte.html #menu",
 		"type": "htm",
 		"period": "week",
-		"address": "Wilsdruffer Stra\u00DFe 22, 01067 Dresden"
+		"address": "Wilsdruffer Stra\u00DFe 22, 01067 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "tapasbarcelona",
@@ -225,7 +241,8 @@
 		"menu": "/widmann/files/mittagskarte_tapasbarcelona.pdf",
 		"type": "pdf",
 		"period": "week",
-		"address": "Weisse Gasse 6, 01067 Dresden"
+		"address": "Weisse Gasse 6, 01067 Dresden",
+		"sodexo": true
 	}, {
 		"enabled": true,
 		"id": "salumeria",
@@ -237,7 +254,8 @@
 		"menu": "/ecm/2ca5ea2e2e6c2fc0936ea045/root?objectId=o0p-2fWflkN0JovYKFHlL1Fkqtf61re-jnCKdVCqow8&cmisselector=content",
 		"type": "img",
 		"period": "week",
-		"address": "Webergasse 1, 01067 Dresden"
+		"address": "Webergasse 1, 01067 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": false,
 		"id": "dubliner",
@@ -249,7 +267,8 @@
 		"menu": "/dropbox/u/3428116/dubliner.pdf",
 		"type": "pdf",
 		"period": "week",
-		"address": "Gewandhausstra\u00DFe 7, 01067 Dresden"
+		"address": "Gewandhausstra\u00DFe 7, 01067 Dresden",
+		"sodexo": true
 	}, {
 		"enabled": true,
 		"id": "shamrock",
@@ -261,7 +280,8 @@
 		"menu": "/dropbox/u/3428116/shamrock.pdf",
 		"type": "pdf",
 		"period": "week",
-		"address": "Wilsdruffer Stra\u00DFe 20, 01067 Dresden"
+		"address": "Wilsdruffer Stra\u00DFe 20, 01067 Dresden",
+		"sodexo": true
 	}, {
 		"enabled": true,
 		"id": "augustobar",
@@ -273,7 +293,8 @@
 		"menu": "/augustobar/ #recent-posts",
 		"type": "htm",
 		"period": "week",
-		"address": "Ostra-Allee 20, 01067 Dresden"
+		"address": "Ostra-Allee 20, 01067 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "souperb",
@@ -285,7 +306,8 @@
 		"menu": "/souperb/ #content",
 		"type": "htm",
 		"period": "week",
-		"address": "Rampische Stra\u00DFe 27, 01067 Dresden"
+		"address": "Rampische Stra\u00DFe 27, 01067 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "kuppel",
@@ -297,7 +319,8 @@
 		"menu": "/dropbox/u/3428116/kuppel.pdf",
 		"type": "pdf",
 		"period": "week",
-		"address": "Wei\u00DFeritzstra\u00DFe 3, 01067 Dresden"
+		"address": "Wei\u00DFeritzstra\u00DFe 3, 01067 Dresden",
+		"sodexo": false
 	}, {
 		"enabled": true,
 		"id": "aposto",
@@ -309,7 +332,8 @@
 		"menu": "/aposto/ #widget_4",
 		"type": "htm",
 		"period": "week",
-		"address": "Seestra\u00DFe 10, 01067 Dresden"
+		"address": "Seestra\u00DFe 10, 01067 Dresden",
+		"sodexo": true
 	}, {
 		"enabled": true,
 		"id": "enchilada",
@@ -321,7 +345,8 @@
 		"menu": "/enchilada/restaurant #widget_2",
 		"type": "htm",
 		"period": "week",
-		"address": "Wilsdruffer Stra\u00DFe 22, 01067 Dresden"
+		"address": "Wilsdruffer Stra\u00DFe 22, 01067 Dresden",
+		"sodexo": true
 	}, {
 		"enabled": true,
 		"id": "central",
@@ -333,6 +358,7 @@
 		"menu": "/central/central_Mittagskarte.pdf",
 		"type": "pdf",
 		"period": "week",
-		"address": "Altmarkt 6, 01067 Dresden"
+		"address": "Altmarkt 6, 01067 Dresden",
+		"sodexo": true
 	}]
 }

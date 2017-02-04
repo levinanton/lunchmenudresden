@@ -137,6 +137,13 @@ js.core.Controller.extend("js.ui.list", {
 		var oModel = this.getView().getModel("icon");
 		return oModel.getProperty("/".concat(sValue.toUpperCase()));
 	},
+	
+	formatTitle:function(sTitle, bSodexo) {
+		if (bSodexo) {
+			return sTitle.concat(" ", "\u2B50");
+		}
+		return sTitle;
+	},
 
 	onListItemPress: function(oEvent) {
 		var oSelectedItem = oEvent.getSource().getSelectedItem();

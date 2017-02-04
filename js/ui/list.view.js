@@ -22,7 +22,12 @@ sap.ui.jsview("js.ui.list", {
 		var oController = this.getController();
 		var oStandardListItem = new sap.m.StandardListItem({
 			type: sap.m.ListType.Active,
-			title: "{title}",
+			title: {
+				parts: ["title", "sodexo"],
+				formatter: function(sTitle, bSodexo) {
+					return oController.formatTitle(sTitle, bSodexo);
+				}
+			},
 			icon: {
 				path: "type",
 				formatter: function(sValue) {
