@@ -360,5 +360,31 @@
 		"period": "week",
 		"address": "Altmarkt 6, 01067 Dresden",
 		"sodexo": true
+	}, {
+		"enabled": true,
+		"id": "sherepunjab",
+		"title": "Sher-e-Punjab",
+		"location": {
+			"latitude": 51.049911,
+			"longitude": 13.734219
+		},
+		"menu": "/sherepunjab/speisekarte #post-446",
+		"type": "htm",
+		"period": "week",
+		"address": "Wallstra\u00DFe 5, 01067, Dresden",
+		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "denns",
+		"title": "denn's Biomarkt",
+		"location": {
+			"latitude": 51.050412,
+			"longitude": 13.735536
+		},
+		"menu": "/dropbox/s/5n3wz450j6pbzee/denns.pdf",
+		"type": "pdf",
+		"period": "week",
+		"address": "Webergasse 1, 01067 Dresden",
+		"sodexo": true
 	}]
 }

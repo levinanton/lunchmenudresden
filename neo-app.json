@@ -200,6 +200,14 @@
         "name": "central"
       },
       "description": "Cafe Central"
+    },
+    {
+      "path": "/sherepunjab",
+      "target": {
+        "type": "destination",
+        "name": "sherepunjab"
+      },
+      "description": "Sher-e-Punjab Dresden"
     }
   ],
   "cacheControl": [
