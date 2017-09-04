@@ -208,6 +208,14 @@
         "name": "sherepunjab"
       },
       "description": "Sher-e-Punjab Dresden"
+    },
+    {
+      "path": "/palastecke",
+      "target": {
+        "type": "destination",
+        "name": "palastecke"
+      },
+      "description": "Palast Ecke"
     }
   ],
   "cacheControl": [

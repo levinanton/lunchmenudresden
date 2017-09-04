@@ -386,5 +386,18 @@
 		"period": "week",
 		"address": "Webergasse 1, 01067 Dresden",
 		"sodexo": true
-	}]
+	}, {
+		"enabled": true,
+		"id": "palastecke",
+		"title": "Palast Ecke",
+		"location": {
+			"latitude": 51.050805,
+			"longitude": 13.738999
+		},
+		"menu": "/palastecke/speisekarte #mainDiv",
+		"type": "htm",
+		"period": "week",
+		"address": "Schlo\u00DFstra\u00DFe 2, 01067, Dresden",
+		"sodexo": false
+	} ]
 }
