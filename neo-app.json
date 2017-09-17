@@ -216,6 +216,14 @@
         "name": "palastecke"
       },
       "description": "Palast Ecke"
+    },
+    {
+      "path": "/facebook",
+      "target": {
+        "type": "destination",
+        "name": "facebook"
+      },
+      "description": "Facebook"
     }
   ],
   "cacheControl": [
