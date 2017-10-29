@@ -224,6 +224,14 @@
         "name": "facebook"
       },
       "description": "Facebook"
+    },
+    {
+      "path": "/comiss",
+      "target": {
+        "type": "destination",
+        "name": "comiss"
+      },
+      "description": "COM & iss"
     }
   ],
   "cacheControl": [

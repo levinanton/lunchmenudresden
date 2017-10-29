@@ -399,5 +399,18 @@
 		"period": "week",
 		"address": "Schlo\u00DFstra\u00DFe 2, 01067, Dresden",
 		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "comiss",
+		"title": "COM & iss",
+		"location": {
+			"latitude": 51.036664,
+			"longitude": 13.715712
+		},
+		"menu": "/dropbox/s/m5r1m8d52ezyb0d/comiss.pdf",
+		"type": "pdf",
+		"period": "week",
+		"address": "Chemnitzer Stra\u00DFe 59b, 01187 Dresden",
+		"sodexo": false
 	} ]
 }
