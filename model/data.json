@@ -425,5 +425,18 @@
 		"period": "week",
 		"address": "Theaterplatz 1a, 01067 Dresden",
 		"sodexo": true
+	}, {
+		"enabled": true,
+		"id": "burgerei",
+		"title": "Burgerei",
+		"location": {
+			"latitude": 51.050652,
+			"longitude": 13.740376
+		},
+		"menu": "/widmann/files/mittagskarte_burgerei_1.pdf",
+		"type": "pdf",
+		"period": "week",
+		"address": "Neumarkt 12, 01067 Dresden",
+		"sodexo": false
 	} ]
 }
