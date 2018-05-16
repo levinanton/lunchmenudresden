@@ -438,5 +438,31 @@
 		"period": "week",
 		"address": "Neumarkt 12, 01067 Dresden",
 		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "steakroyal",
+		"title": "Steak Royal",
+		"location": {
+			"latitude": 51.049124,
+			"longitude": 13.740606
+		},
+		"menu": "/widmann/files/mittagskarte_steakroyal.pdf",
+		"type": "pdf",
+		"period": "week",
+		"address": "Weisse Gasse 4, 01067 Dresden",
+		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "meetthegreek",
+		"title": "Meet the Greek",
+		"location": {
+			"latitude": 51.049107,
+			"longitude": 13.740032
+		},
+		"menu": "/widmann/files/mittagskarte_capetowns.pdf",
+		"type": "pdf",
+		"period": "week",
+		"address": "Weisse Gasse 1, 01067 Dresden",
+		"sodexo": false
 	} ]
 }
