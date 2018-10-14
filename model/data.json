@@ -93,7 +93,7 @@
 		"address": "Chemnitzer Stra\u00DFe 78a, 01187 Dresden",
 		"sodexo": false
 	}, {
-		"enabled": true,
+		"enabled": false,
 		"id": "pastamania",
 		"title": "Pastamania",
 		"location": {
@@ -348,7 +348,7 @@
 		"address": "Wilsdruffer Stra\u00DFe 22, 01067 Dresden",
 		"sodexo": true
 	}, {
-		"enabled": true,
+		"enabled": false,
 		"id": "central",
 		"title": "Cafe Central",
 		"location": {
