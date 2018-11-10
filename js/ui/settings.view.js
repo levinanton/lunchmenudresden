@@ -13,7 +13,7 @@ sap.ui.jsview('js.ui.settings', {
 		});
 		var oSegmentedButton = new sap.m.SegmentedButton({
 			selectedKey : "{settings>/location}",
-			width : "300px",
+			width : "460px",
 			select : function(oEvent) {
 				oController.handleSelect(oEvent);
 			}
@@ -100,8 +100,8 @@ sap.ui.jsview('js.ui.settings', {
 	createContent : function(oController) {
 		this.oPopover = new sap.m.ResponsivePopover({
 			showHeader : false,
-			contentWidth : '320px',
-			contentHeight : '240px',
+			contentWidth : '480px',
+			contentHeight : '320px',
 			placement : sap.m.PlacementType.Top,
 			content : this.createNavContainer()
 		});

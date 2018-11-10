@@ -9,10 +9,12 @@ js.core.Controller.extend('js.ui.settings', {
 			},{
 				key : "DRE03",
 				text : "DRE03"
-				
 			},{
 				key : "DRE04",
 				text : "DRE04"
+			},{
+				key : "DRE06",
+				text : "DRE06"
 			}
 		]);	
 		this.getView().oPopover.setModel(oJSONModel, 'location');
