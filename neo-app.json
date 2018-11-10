@@ -232,6 +232,14 @@
         "name": "comiss"
       },
       "description": "COM & iss"
+    },
+    {
+      "path": "/richtererzgebirge",
+      "target": {
+        "type": "destination",
+        "name": "richtererzgebirge"
+      },
+      "description": "Richter Erzgebirge"
     }
   ],
   "cacheControl": [

@@ -155,8 +155,8 @@ sap.ui.core.mvc.Controller.extend("js.core.Controller", {
 			});
 		} else if ("DRE06" === sLocation) {
 			this.getEventBus().publish(Channel.GEO, Event.LOCATE, {
-				latitude: 51.0463187,
-				longitude: 13.7540158
+				latitude: 51.045914,
+				longitude: 13.757310
 
 			});
 		} else {

@@ -464,5 +464,18 @@
 		"period": "week",
 		"address": "Weisse Gasse 1, 01067 Dresden",
 		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "richtererzgebirge",
+		"title": "Richter Erzgebirge",
+		"location": {
+			"latitude": 51.046177,
+			"longitude": 13.756645
+		},
+		"menu": "/richtererzgebirge/wochenmenue-plan/?fid=51165&region=2 #plan-region-4",
+		"type": "htm",
+		"period": "week",
+		"address": "Stra\u00DFburger Platz 1, 01307 Dresden",
+		"sodexo": false
 	} ]
 }
