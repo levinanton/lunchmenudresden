@@ -240,6 +240,38 @@
         "name": "richtererzgebirge"
       },
       "description": "Richter Erzgebirge"
+    },
+    {
+      "path": "/steakroyal",
+      "target": {
+        "type": "destination",
+        "name": "steakroyal"
+      },
+      "description": "Steak Royal"
+    },
+    {
+      "path": "/meetthegreek",
+      "target": {
+        "type": "destination",
+        "name": "meetthegreek"
+      },
+      "description": "Meet the Greek"
+    },
+    {
+      "path": "/burgerei",
+      "target": {
+        "type": "destination",
+        "name": "burgerei"
+      },
+      "description": "Burgerei Dresden"
+    },
+    {
+      "path": "/tapasbarcelona",
+      "target": {
+        "type": "destination",
+        "name": "tapasbarcelona"
+      },
+      "description": "Tapas Barcelona"
     }
   ],
   "cacheControl": [

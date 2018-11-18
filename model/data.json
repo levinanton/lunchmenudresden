@@ -231,15 +231,15 @@
 		"address": "Wilsdruffer Stra\u00DFe 22, 01067 Dresden",
 		"sodexo": false
 	}, {
-		"enabled": true,
+		"enabled": false,
 		"id": "tapasbarcelona",
 		"title": "Tapas Barcelona",
 		"location": {
 			"latitude": 51.0494864,
 			"longitude": 13.7385721
 		},
-		"menu": "/widmann/files/mittagskarte_tapasbarcelona.pdf",
-		"type": "pdf",
+		"menu": "/tapasbarcelona/mittagskarte.html",
+		"type": "htm",
 		"period": "week",
 		"address": "Weisse Gasse 6, 01067 Dresden",
 		"sodexo": true
@@ -433,8 +433,8 @@
 			"latitude": 51.050652,
 			"longitude": 13.740376
 		},
-		"menu": "/widmann/files/mittagskarte_burgerei_1.pdf",
-		"type": "pdf",
+		"menu": "/burgerei/mittagskarte.html",
+		"type": "htm",
 		"period": "week",
 		"address": "Neumarkt 12, 01067 Dresden",
 		"sodexo": false
@@ -446,8 +446,8 @@
 			"latitude": 51.049124,
 			"longitude": 13.740606
 		},
-		"menu": "/widmann/files/mittagskarte_steakroyal.pdf",
-		"type": "pdf",
+		"menu": "/steakroyal/mittagskarte.html",
+		"type": "htm",
 		"period": "week",
 		"address": "Weisse Gasse 4, 01067 Dresden",
 		"sodexo": false
@@ -459,8 +459,8 @@
 			"latitude": 51.049107,
 			"longitude": 13.740032
 		},
-		"menu": "/widmann/files/mittagskarte_capetowns.pdf",
-		"type": "pdf",
+		"menu": "/meetthegreek/mittagskarte.html",
+		"type": "htm",
 		"period": "week",
 		"address": "Weisse Gasse 1, 01067 Dresden",
 		"sodexo": false

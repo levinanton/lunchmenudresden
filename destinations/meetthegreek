@@ -1,0 +1,8 @@
+#
+#Sun Nov 18 15:42:30 UTC 2018
+Name=meetthegreek
+URL=http\://www.meetthegreek.de
+ProxyType=Internet
+Type=HTTP
+Authentication=NoAuthentication
+Description=Meet the Greek

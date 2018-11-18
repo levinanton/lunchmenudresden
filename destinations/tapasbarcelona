@@ -1,0 +1,8 @@
+#
+#Sun Nov 18 15:41:47 UTC 2018
+Name=tapasbarcelona
+URL=http\://www.tapasbarcelona.de
+ProxyType=Internet
+Type=HTTP
+Authentication=NoAuthentication
+Description=Tapas Barcelona
