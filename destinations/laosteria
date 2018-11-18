@@ -1,0 +1,8 @@
+#
+#Sun Nov 18 15:50:47 UTC 2018
+Name=laosteria
+URL=http\://www.laosteria.de
+ProxyType=Internet
+Type=HTTP
+Authentication=NoAuthentication
+Description=LaOsteria

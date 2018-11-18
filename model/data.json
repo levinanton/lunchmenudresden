@@ -477,5 +477,31 @@
 		"period": "week",
 		"address": "Stra\u00DFburger Platz 1, 01307 Dresden",
 		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "laosteria",
+		"title": "LaOsteria",
+		"location": {
+			"latitude": 51.04877,
+			"longitude": 13.7388713
+		},
+		"menu": "/laosteria/mittagskarte.html",
+		"type": "htm",
+		"period": "week",
+		"address": "Kreuzstra\u00DFe 1, 01067 Dresden",
+		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "bodegamadrid",
+		"title": "Bodega Madrid",
+		"location": {
+			"latitude": 51.0508077,
+			"longitude": 13.7379206
+		},
+		"menu": "/bodegamadrid/mittagsangebote.html",
+		"type": "htm",
+		"period": "week",
+		"address": "Neumarkt 12, 01067 Dresden",
+		"sodexo": false
 	} ]
 }

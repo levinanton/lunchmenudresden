@@ -1,0 +1,8 @@
+#
+#Sun Nov 18 15:50:38 UTC 2018
+Name=bodegamadrid
+URL=http\://www.bodegamadrid.de
+ProxyType=Internet
+Type=HTTP
+Authentication=NoAuthentication
+Description=Bodega Madrid

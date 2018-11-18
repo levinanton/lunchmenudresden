@@ -272,6 +272,22 @@
         "name": "tapasbarcelona"
       },
       "description": "Tapas Barcelona"
+    },
+    {
+      "path": "/laosteria",
+      "target": {
+        "type": "destination",
+        "name": "laosteria"
+      },
+      "description": "LaOsteria"
+    },
+    {
+      "path": "/bodegamadrid",
+      "target": {
+        "type": "destination",
+        "name": "bodegamadrid"
+      },
+      "description": "Bodega Madrid"
     }
   ],
   "cacheControl": [
