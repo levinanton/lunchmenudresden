@@ -288,6 +288,14 @@
         "name": "bodegamadrid"
       },
       "description": "Bodega Madrid"
+    },
+    {
+      "path": "/gastrokreativ",
+      "target": {
+        "type": "destination",
+        "name": "gastrokreativ"
+      },
+      "description": "Gastrokreativ"
     }
   ],
   "cacheControl": [

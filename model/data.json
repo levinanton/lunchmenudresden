@@ -503,5 +503,18 @@
 		"period": "week",
 		"address": "Neumarkt 12, 01067 Dresden",
 		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "kochagentur",
+		"title": "Koch Agentur",
+		"location": {
+			"latitude": 51.046999,
+			"longitude": 13.755045
+		},
+		"menu": "/gastrokreativ/kochagentur/cms/temp/files/standorte_16_1547906834.pdf",
+		"type": "pdf",
+		"period": "week",
+		"address": "G\u00FCntzstra\u00DFe 1, 01069 Dresden",
+		"sodexo": false
 	} ]
 }
