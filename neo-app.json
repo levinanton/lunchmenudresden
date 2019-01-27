@@ -296,6 +296,14 @@
         "name": "gastrokreativ"
       },
       "description": "Gastrokreativ"
+    },
+    {
+      "path": "/lunchtimejetzt",
+      "target": {
+        "type": "destination",
+        "name": "lunchtimejetzt"
+      },
+      "description": "LunchTime.jetzt"
     }
   ],
   "cacheControl": [
