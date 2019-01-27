@@ -231,15 +231,15 @@
 		"address": "Wilsdruffer Stra\u00DFe 22, 01067 Dresden",
 		"sodexo": false
 	}, {
-		"enabled": false,
+		"enabled": true,
 		"id": "tapasbarcelona",
 		"title": "Tapas Barcelona",
 		"location": {
 			"latitude": 51.0494864,
 			"longitude": 13.7385721
 		},
-		"menu": "/tapasbarcelona/mittagskarte.html",
-		"type": "htm",
+		"menu": "/widmann/files/mittagskarte-tapas-barcelona-dresden.pdf",
+		"type": "pdf",
 		"period": "week",
 		"address": "Weisse Gasse 6, 01067 Dresden",
 		"sodexo": true
@@ -433,8 +433,8 @@
 			"latitude": 51.050652,
 			"longitude": 13.740376
 		},
-		"menu": "/burgerei/mittagskarte.html",
-		"type": "htm",
+		"menu": "/widmann/files/mittagskarte-burgerei-dresden.pdf",
+		"type": "pdf",
 		"period": "week",
 		"address": "Neumarkt 12, 01067 Dresden",
 		"sodexo": false
@@ -446,8 +446,8 @@
 			"latitude": 51.049124,
 			"longitude": 13.740606
 		},
-		"menu": "/steakroyal/mittagskarte.html",
-		"type": "htm",
+		"menu": "/widmann/files/mittagskarte-steak-royal-dresden.pdf",
+		"type": "pdf",
 		"period": "week",
 		"address": "Weisse Gasse 4, 01067 Dresden",
 		"sodexo": false
@@ -459,8 +459,8 @@
 			"latitude": 51.049107,
 			"longitude": 13.740032
 		},
-		"menu": "/meetthegreek/mittagskarte.html",
-		"type": "htm",
+		"menu": "/widmann/files/mittagskarte-meet-the-greek-dresden.pdf",
+		"type": "pdf",
 		"period": "week",
 		"address": "Weisse Gasse 1, 01067 Dresden",
 		"sodexo": false
@@ -485,8 +485,8 @@
 			"latitude": 51.04877,
 			"longitude": 13.7388713
 		},
-		"menu": "/laosteria/mittagskarte.html",
-		"type": "htm",
+		"menu": "/widmann/files/mittagskarte-la-osteria-dresden.pdf",
+		"type": "pdf",
 		"period": "week",
 		"address": "Kreuzstra\u00DFe 1, 01067 Dresden",
 		"sodexo": false
@@ -498,8 +498,8 @@
 			"latitude": 51.0508077,
 			"longitude": 13.7379206
 		},
-		"menu": "/bodegamadrid/mittagsangebote.html",
-		"type": "htm",
+		"menu": "/widmann/files/mittagskarte-bodega-madrid-dresden.pdf",
+		"type": "pdf",
 		"period": "week",
 		"address": "Neumarkt 12, 01067 Dresden",
 		"sodexo": false
