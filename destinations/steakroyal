@@ -1,8 +1,0 @@
-#
-#Sun Nov 18 15:42:43 UTC 2018
-Name=steakroyal
-URL=http\://www.steak-royal.de
-ProxyType=Internet
-Type=HTTP
-Authentication=NoAuthentication
-Description=Steak Royal

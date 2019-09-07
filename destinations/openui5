@@ -1,9 +1,0 @@
-#
-#Sat Jul 02 22:16:44 UTC 2016
-Name=openui5
-URL=https\://openui5.hana.ondemand.com
-ProxyType=Internet
-Type=HTTP
-CloudConnectorVersion=2
-Authentication=NoAuthentication
-Description=OpenUI5

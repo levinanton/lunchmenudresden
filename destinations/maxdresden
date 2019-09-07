@@ -1,9 +1,0 @@
-#
-#Fri Apr 29 17:14:17 UTC 2016
-Name=maxdresden
-URL=http\://www.max-dresden.de
-ProxyType=Internet
-Type=HTTP
-CloudConnectorVersion=2
-Authentication=NoAuthentication
-Description=Max Restaurant Dresden

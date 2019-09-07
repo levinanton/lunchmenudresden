@@ -192,7 +192,7 @@
 		"address": "Zwickauer Stra\u00DFe 112, 01187 Dresden",
 		"sodexo": false
 	}, {
-		"enabled": true,
+		"enabled": false,
 		"id": "holidayinn",
 		"title": "Holiday Inn",
 		"location": {
@@ -244,7 +244,7 @@
 		"address": "Weisse Gasse 6, 01067 Dresden",
 		"sodexo": true
 	}, {
-		"enabled": true,
+		"enabled": false,
 		"id": "salumeria",
 		"title": "Salumeria",
 		"location": {

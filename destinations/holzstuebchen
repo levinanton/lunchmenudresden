@@ -1,9 +1,0 @@
-#
-#Fri Apr 29 17:13:56 UTC 2016
-Name=holzstuebchen
-URL=http\://holzstuebchen-dresden.de
-ProxyType=Internet
-Type=HTTP
-CloudConnectorVersion=2
-Authentication=NoAuthentication
-Description=Gaststaette Holzstuebchen

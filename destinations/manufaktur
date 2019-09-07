@@ -1,9 +1,0 @@
-#
-#Fri Apr 29 17:14:12 UTC 2016
-Name=manufaktur
-URL=http\://www.genuss-manu-faktur.de
-ProxyType=Internet
-Type=HTTP
-CloudConnectorVersion=2
-Authentication=NoAuthentication
-Description=Genuss-Manu-Faktur

@@ -1,9 +1,0 @@
-#
-#Fri Apr 29 17:13:55 UTC 2016
-Name=hoangdo
-URL=http\://www.hoangdo.de
-ProxyType=Internet
-Type=HTTP
-CloudConnectorVersion=2
-Authentication=NoAuthentication
-Description=Hoang Do Asia Euro Restaurant

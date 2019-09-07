@@ -1,8 +1,0 @@
-#
-#Fri Apr 29 17:13:40 UTC 2016
-Name=dropbox
-URL=https\://dl.dropboxusercontent.com
-ProxyType=Internet
-Type=HTTP
-CloudConnectorVersion=2
-Authentication=NoAuthentication

@@ -1,8 +1,0 @@
-#
-#Sun Nov 18 15:42:09 UTC 2018
-Name=burgerei
-URL=http\://www.burgerei-dresden.de
-ProxyType=Internet
-Type=HTTP
-Authentication=NoAuthentication
-Description=Burgerei Dresden

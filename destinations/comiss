@@ -1,9 +1,0 @@
-#
-#Sun Oct 29 11:53:58 UTC 2017
-Name=comiss
-URL=http\://www.com-und-iss.de
-ProxyType=Internet
-Type=HTTP
-CloudConnectorVersion=2
-Authentication=NoAuthentication
-Description=COM & iss

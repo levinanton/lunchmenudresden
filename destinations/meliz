@@ -1,9 +1,0 @@
-#
-#Fri Apr 29 17:14:18 UTC 2016
-Name=meliz
-URL=http\://www.meliz-doener.de
-ProxyType=Internet
-Type=HTTP
-CloudConnectorVersion=2
-Authentication=NoAuthentication
-Description=Meliz Doener

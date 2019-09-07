@@ -1,8 +1,0 @@
-#
-#Fri Apr 29 17:13:29 UTC 2016
-Name=aposto
-URL=http\://dresden.aposto.eu
-ProxyType=Internet
-Type=HTTP
-CloudConnectorVersion=2
-Authentication=NoAuthentication
