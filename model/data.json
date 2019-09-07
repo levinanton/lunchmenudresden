@@ -329,7 +329,7 @@
 			"latitude": 51.0484552,
 			"longitude": 13.7364541
 		},
-		"menu": "/aposto/ #widget_4",
+		"menu": "/aposto/ #widget_2",
 		"type": "htm",
 		"period": "week",
 		"address": "Seestra\u00DFe 10, 01067 Dresden",
@@ -420,7 +420,7 @@
 			"latitude": 51.053662,
 			"longitude": 13.734341
 		},
-		"menu": "/dropbox/s/7cd47dqqjrg9fub/altemeister.pdf",
+		"menu": "/altemeister/Speisekarte-PDF.php",
 		"type": "pdf",
 		"period": "week",
 		"address": "Theaterplatz 1a, 01067 Dresden",

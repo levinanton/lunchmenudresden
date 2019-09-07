@@ -304,6 +304,14 @@
         "name": "lunchtimejetzt"
       },
       "description": "LunchTime.jetzt"
+    },
+    {
+      "path": "/altemeister",
+      "target": {
+        "type": "destination",
+        "name": "altemeister"
+      },
+      "description": "Alte Meister"
     }
   ],
   "cacheControl": [
