@@ -328,6 +328,14 @@
         "name": "turtlebay"
       },
       "description": "Turtle Bay"
+    },
+    {
+      "path": "/hansimglueck",
+      "target": {
+        "type": "destination",
+        "name": "hansimglueck"
+      },
+      "description": "Hans im Glueck Burgergrill"
     }
   ],
   "cacheControl": [

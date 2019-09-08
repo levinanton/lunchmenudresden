@@ -542,5 +542,18 @@
 		"period": "week",
 		"address": "Kleine Br\u00FCderga\u00DFe 5, 01067 Dresden",
 		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "hansimglueck",
+		"title": "Hans im Gl\u00Fcck",
+		"location": {
+			"latitude": 51.050152,
+			"longitude": 13.737313
+		},
+		"menu": "/hansimglueck/wp-content/uploads/2019/05/dresden_altmarkt_speisekarte.pdf",
+		"type": "pdf",
+		"period": "week",
+		"address": "Altmarkt 24, 01067 Dresden",
+		"sodexo": false
 	} ]
 }
