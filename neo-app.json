@@ -320,6 +320,14 @@
         "name": "ocakbasi"
       },
       "description": "Ocakbasi Altstadt"
+    },
+    {
+      "path": "/turtlebay",
+      "target": {
+        "type": "destination",
+        "name": "turtlebay"
+      },
+      "description": "Turtle Bay"
     }
   ],
   "cacheControl": [

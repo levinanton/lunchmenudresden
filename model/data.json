@@ -529,5 +529,18 @@
 		"period": "week",
 		"address": "Gewandhausstra\u00DFe 2, 01067, Dresden",
 		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "turtlebay",
+		"title": "Turtle Bay",
+		"location": {
+			"latitude": 51.051789,
+			"longitude": 13.735152
+		},
+		"menu": "/turtlebay/wp-content/uploads/2019/08/MENU-2019.pdf",
+		"type": "pdf",
+		"period": "week",
+		"address": "Kleine Br\u00FCderga\u00DFe 5, 01067 Dresden",
+		"sodexo": false
 	} ]
 }
