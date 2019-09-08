@@ -344,6 +344,14 @@
         "name": "1topf"
       },
       "description": "1topf"
+    },
+    {
+      "path": "/santafe",
+      "target": {
+        "type": "destination",
+        "name": "santafe"
+      },
+      "description": "Santa Fe"
     }
   ],
   "cacheControl": [

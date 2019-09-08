@@ -568,5 +568,18 @@
 		"period": "week",
 		"address": "Wei\u00DFe Gasse 6, 01067, Dresden",
 		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "santafe",
+		"title": "Santa Fe",
+		"location": {
+			"latitude": 51.049082,
+			"longitude": 13.741861
+		},
+		"menu": "/santafe/template/downloads/speisekarte-tms.pdf",
+		"type": "pdf",
+		"period": "week",
+		"address": "Gewandhausstra\u00DFe 3, 01067 Dresden",
+		"sodexo": false
 	} ]
 }
