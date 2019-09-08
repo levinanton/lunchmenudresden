@@ -336,6 +336,14 @@
         "name": "hansimglueck"
       },
       "description": "Hans im Glueck Burgergrill"
+    },
+    {
+      "path": "/1topf",
+      "target": {
+        "type": "destination",
+        "name": "1topf"
+      },
+      "description": "1topf"
     }
   ],
   "cacheControl": [

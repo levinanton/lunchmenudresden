@@ -555,5 +555,18 @@
 		"period": "week",
 		"address": "Altmarkt 24, 01067 Dresden",
 		"sodexo": false
+	}, {
+		"enabled": false,
+		"id": "1topf",
+		"title": "1topf",
+		"location": {
+			"latitude": 51.049652,
+			"longitude": 13.741104
+		},
+		"menu": "/1topf/ #menu",
+		"type": "htm",
+		"period": "week",
+		"address": "Wei\u00DFe Gasse 6, 01067, Dresden",
+		"sodexo": false
 	} ]
 }
