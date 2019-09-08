@@ -566,7 +566,7 @@
 		"menu": "/1topf/ #menu",
 		"type": "htm",
 		"period": "week",
-		"address": "Wei\u00DFe Gasse 6, 01067, Dresden",
+		"address": "Wei\u00DFe Gasse 6, 01069, Dresden",
 		"sodexo": false
 	}, {
 		"enabled": true,
@@ -580,6 +580,19 @@
 		"type": "pdf",
 		"period": "week",
 		"address": "Gewandhausstra\u00DFe 3, 01067 Dresden",
+		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "foersters",
+		"title": "F\u00F6rsters",
+		"location": {
+			"latitude": 51.049666,
+			"longitude": 13.741195
+		},
+		"menu": "/foersters/ #tab-3",
+		"type": "htm",
+		"period": "week",
+		"address": "Wei\u00DFe Gasse 5, 01067, Dresden",
 		"sodexo": false
 	} ]
 }

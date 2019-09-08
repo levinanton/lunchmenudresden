@@ -352,6 +352,14 @@
         "name": "santafe"
       },
       "description": "Santa Fe"
+    },
+    {
+      "path": "/foersters",
+      "target": {
+        "type": "destination",
+        "name": "foersters"
+      },
+      "description": "Foersters"
     }
   ],
   "cacheControl": [
