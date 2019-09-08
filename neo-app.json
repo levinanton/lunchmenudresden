@@ -312,6 +312,14 @@
         "name": "altemeister"
       },
       "description": "Alte Meister"
+    },
+    {
+      "path": "/ocakbasi",
+      "target": {
+        "type": "destination",
+        "name": "ocakbasi"
+      },
+      "description": "Ocakbasi Altstadt"
     }
   ],
   "cacheControl": [

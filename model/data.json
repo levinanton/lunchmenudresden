@@ -516,5 +516,18 @@
 		"period": "week",
 		"address": "G\u00FCntzstra\u00DFe 1, 01069 Dresden",
 		"sodexo": false
+	}, {
+		"enabled": true,
+		"id": "ocakbasi",
+		"title": "Ocakba\u015Fi Altstadt",
+		"location": {
+			"latitude": 51.049319,
+			"longitude": 13.742804
+		},
+		"menu": "/ocakbasi/speisekarte-menu #TPASection_ij00zwb5",
+		"type": "htm",
+		"period": "week",
+		"address": "Gewandhausstra\u00DFe 2, 01067, Dresden",
+		"sodexo": false
 	} ]
 }
