@@ -179,7 +179,7 @@
 		"address": "Hofm\u00FChlenstra\u00DFe 14, 01187 Dresden",
 		"sodexo": false
 	}, {
-		"enabled": true,
+		"enabled": false,
 		"id": "holzstuebchen",
 		"title": "Gastst\u00E4tte Holzst\u00FCbchen",
 		"location": {
